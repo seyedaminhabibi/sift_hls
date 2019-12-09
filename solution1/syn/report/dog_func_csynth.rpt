@@ -1,0 +1,187 @@
+
+
+================================================================
+== Vivado HLS Report for 'dog_func'
+================================================================
+* Date:           Wed Dec  4 23:12:30 2019
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        sift_starter
+* Solution:       solution1
+* Product family: qzynq
+* Target device:  xq7z020cl400-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|      5.10|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    6|    6|    6|    6| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------+------------+-----+-----+-----+-----+----------+
+        |                       |            |  Latency  |  Interval | Pipeline |
+        |        Instance       |   Module   | min | max | min | max |   Type   |
+        +-----------------------+------------+-----+-----+-----+-----+----------+
+        |grp_dog_func_1_fu_142  |dog_func_1  |    1|    1|    1|    1| function |
+        +-----------------------+------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|      22|     22|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     47|
+|Register         |        -|      -|     141|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|     163|     69|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------+------------+---------+-------+----+----+
+    |        Instance       |   Module   | BRAM_18K| DSP48E| FF | LUT|
+    +-----------------------+------------+---------+-------+----+----+
+    |grp_dog_func_1_fu_142  |dog_func_1  |        0|      0|  22|  22|
+    +-----------------------+------------+---------+-------+----+----+
+    |Total                  |            |        0|      0|  22|  22|
+    +-----------------------+------------+---------+-------+----+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +---------------------------------------+----+-----------+-----+-----------+
+    |                  Name                 | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                              |   1|          7|    1|          7|
+    |ap_reg_ppiten_pp0_it0                  |   1|          2|    1|          2|
+    |ap_reg_ppiten_pp0_it1                  |   1|          2|    1|          2|
+    |grp_dog_func_1_fu_142_delay_rp_V_read  |  10|          4|   10|         40|
+    |grp_dog_func_1_fu_142_delay_wp_V_read  |  10|          4|   10|         40|
+    |grp_dog_func_1_fu_142_in_V             |   8|          4|    8|         32|
+    |grp_dog_func_1_fu_142_tmp_5            |   3|          4|    3|         12|
+    |in_V_blk_n                             |   1|          2|    1|          2|
+    |line_buffer_delay_outs_V_address0      |   2|          5|    2|         10|
+    |line_buffer_delay_outs_V_address1      |   2|          4|    2|          8|
+    |reg_177                                |   8|          2|    8|         16|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |Total                                  |  47|         40|   47|        171|
+    +---------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------+----+----+-----+-----------+
+    |                     Name                    | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                    |   6|   0|    6|          0|
+    |ap_reg_grp_dog_func_1_fu_142_ap_start        |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_it1                        |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp0_iter0_preg                 |   1|   0|    1|          0|
+    |ap_reg_ptbuf_in_V                            |   8|   0|    8|          0|
+    |ap_reg_ptbuf_line_buffer_delays_0_rp_V_read  |  10|   0|   10|          0|
+    |ap_reg_ptbuf_line_buffer_delays_0_wp_V_read  |  10|   0|   10|          0|
+    |ap_reg_ptbuf_line_buffer_delays_1_rp_V_read  |  10|   0|   10|          0|
+    |ap_reg_ptbuf_line_buffer_delays_1_wp_V_read  |  10|   0|   10|          0|
+    |ap_reg_ptbuf_line_buffer_delays_2_rp_V_read  |  10|   0|   10|          0|
+    |ap_reg_ptbuf_line_buffer_delays_2_wp_V_read  |  10|   0|   10|          0|
+    |line_buffer_delay_outs_V_load_1_reg_240      |   8|   0|    8|          0|
+    |line_buffer_delay_outs_V_load_2_reg_252      |   8|   0|    8|          0|
+    |line_buffer_delays_1_rp_V_wri_reg_272        |  10|   0|   10|          0|
+    |line_buffer_delays_1_wp_V_wri_reg_267        |  10|   0|   10|          0|
+    |line_buffer_delays_2_rp_V_wri_reg_262        |  10|   0|   10|          0|
+    |line_buffer_delays_2_wp_V_wri_reg_257        |  10|   0|   10|          0|
+    |reg_177                                      |   8|   0|    8|          0|
+    +---------------------------------------------+----+----+-----+-----------+
+    |Total                                        | 141|   0|  141|          0|
+    +---------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------------+-----+-----+--------------+--------------------------------+--------------+
+|               RTL Ports              | Dir | Bits|   Protocol   |          Source Object         |    C Type    |
++--------------------------------------+-----+-----+--------------+--------------------------------+--------------+
+|ap_clk                                |  in |    1| ap_ctrl_none |            dog_func            | return value |
+|ap_rst                                |  in |    1| ap_ctrl_none |            dog_func            | return value |
+|ap_start                              |  in |    1| ap_ctrl_none |            dog_func            | return value |
+|ap_done                               | out |    1| ap_ctrl_none |            dog_func            | return value |
+|ap_idle                               | out |    1| ap_ctrl_none |            dog_func            | return value |
+|ap_ready                              | out |    1| ap_ctrl_none |            dog_func            | return value |
+|ap_return_0                           | out |   10| ap_ctrl_none |            dog_func            | return value |
+|ap_return_1                           | out |   10| ap_ctrl_none |            dog_func            | return value |
+|ap_return_2                           | out |   10| ap_ctrl_none |            dog_func            | return value |
+|ap_return_3                           | out |   10| ap_ctrl_none |            dog_func            | return value |
+|ap_return_4                           | out |   10| ap_ctrl_none |            dog_func            | return value |
+|ap_return_5                           | out |   10| ap_ctrl_none |            dog_func            | return value |
+|ap_return_6                           | out |   24| ap_ctrl_none |            dog_func            | return value |
+|in_V_blk_n                            | out |    1| ap_ctrl_none |            dog_func            | return value |
+|in_V_ap_vld                           |  in |    1|    ap_vld    |              in_V              |    scalar    |
+|in_V                                  |  in |    8|    ap_vld    |              in_V              |    scalar    |
+|line_buffer_delays_0_wp_V_read        |  in |   10|    ap_none   | line_buffer_delays_0_wp_V_read |    scalar    |
+|line_buffer_delays_1_wp_V_read        |  in |   10|    ap_none   | line_buffer_delays_1_wp_V_read |    scalar    |
+|line_buffer_delays_2_wp_V_read        |  in |   10|    ap_none   | line_buffer_delays_2_wp_V_read |    scalar    |
+|line_buffer_delays_0_rp_V_read        |  in |   10|    ap_none   | line_buffer_delays_0_rp_V_read |    scalar    |
+|line_buffer_delays_1_rp_V_read        |  in |   10|    ap_none   | line_buffer_delays_1_rp_V_read |    scalar    |
+|line_buffer_delays_2_rp_V_read        |  in |   10|    ap_none   | line_buffer_delays_2_rp_V_read |    scalar    |
+|line_buffer_delays_buffer_V_address0  | out |   12|   ap_memory  |   line_buffer_delays_buffer_V  |     array    |
+|line_buffer_delays_buffer_V_ce0       | out |    1|   ap_memory  |   line_buffer_delays_buffer_V  |     array    |
+|line_buffer_delays_buffer_V_q0        |  in |    8|   ap_memory  |   line_buffer_delays_buffer_V  |     array    |
+|line_buffer_delays_buffer_V_address1  | out |   12|   ap_memory  |   line_buffer_delays_buffer_V  |     array    |
+|line_buffer_delays_buffer_V_ce1       | out |    1|   ap_memory  |   line_buffer_delays_buffer_V  |     array    |
+|line_buffer_delays_buffer_V_we1       | out |    1|   ap_memory  |   line_buffer_delays_buffer_V  |     array    |
+|line_buffer_delays_buffer_V_d1        | out |    8|   ap_memory  |   line_buffer_delays_buffer_V  |     array    |
+|line_buffer_delay_outs_V_address0     | out |    2|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_ce0          | out |    1|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_we0          | out |    1|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_d0           | out |    8|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_q0           |  in |    8|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_address1     | out |    2|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_ce1          | out |    1|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_we1          | out |    1|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_d1           | out |    8|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
+|line_buffer_delay_outs_V_q1           |  in |    8|   ap_memory  |    line_buffer_delay_outs_V    |     array    |
++--------------------------------------+-----+-----+--------------+--------------------------------+--------------+
+

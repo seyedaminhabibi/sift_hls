@@ -1,0 +1,6 @@
+   Compiling ../../../src/dog_test.cpp in debug mode
+   Compiling ../../../src/dog.cpp in debug mode
+   Generating csim.exe
+L1 = 1.09961 L2 = 3.2002 L3 = 4.5 L4 = 5.09961
+m1 = 4.41211 m2 = 0.359375
+INFO: [SIM 1] CSim done with 0 errors.

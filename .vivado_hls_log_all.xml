@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependency constraint (II = 5, distance = 1)&#xA;   between 'call' operation ('tmp_4', sift_starter/src/dog.cpp:98) to 'dog_func.1' and 'call' operation ('tmp_s', sift_starter/src/dog.cpp:96) to 'dog_func.1'." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:29.867+0330" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependency constraint (II = 4, distance = 1)&#xA;   between 'store' operation (sift_starter/src/dog.cpp:98) of variable 'call_ret', sift_starter/src/dog.cpp:98 on array 'line_buffer_delay_outs_V' and 'load' operation ('line_buffer_delay_outs_V_load_3', sift_starter/src/dog.cpp:96) on array 'line_buffer_delay_outs_V'." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:29.835+0330" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependency constraint (II = 3, distance = 1)&#xA;   between 'store' operation (sift_starter/src/dog.cpp:98) of variable 'call_ret', sift_starter/src/dog.cpp:98 on array 'line_buffer_delay_outs_V' and 'load' operation ('line_buffer_delay_outs_V_load_3', sift_starter/src/dog.cpp:96) on array 'line_buffer_delay_outs_V'." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:29.792+0330" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependency constraint (II = 2, distance = 1)&#xA;   between 'store' operation (sift_starter/src/dog.cpp:98) of variable 'call_ret', sift_starter/src/dog.cpp:98 on array 'line_buffer_delay_outs_V' and 'load' operation ('line_buffer_delay_outs_V_load_3', sift_starter/src/dog.cpp:96) on array 'line_buffer_delay_outs_V'." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:29.773+0330" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)&#xA;   between 'store' operation (sift_starter/src/dog.cpp:98) of variable 'call_ret', sift_starter/src/dog.cpp:98 on array 'line_buffer_delay_outs_V' and 'load' operation ('line_buffer_delay_outs_V_load_3', sift_starter/src/dog.cpp:96) on array 'line_buffer_delay_outs_V'." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:29.694+0330" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dog_func.1' to 'dog_func_1'." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:29.358+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Asserting false dependency between 'store' operation to variable 'line_buffer.delay_outs.V'(sift_starter/src/dog.cpp:79) and 'load' operation 'line_buffer.delay_outs.V.load.3'(sift_starter/src/dog.cpp:96:2) from variable 'line_buffer.delay_outs.V'(sift_starter/src/dog.cpp:79) according to false dependency pragma(sift_starter/src/dog.cpp:94:1), this may lead to incorrect RTL generation." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:29.343+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Asserting false dependency between 'load' operation 'line_buffer.delay_outs.V.load.3'(sift_starter/src/dog.cpp:96:2) from variable 'line_buffer.delay_outs.V'(sift_starter/src/dog.cpp:79) and 'store' operation to variable 'line_buffer.delay_outs.V'(sift_starter/src/dog.cpp:79) according to false dependency pragma(sift_starter/src/dog.cpp:94:1), this may lead to incorrect RTL generation." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.738+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buffer.delay_outs.V' (sift_starter/src/dog.cpp:79)." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.727+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'line_buffer.delay_outs.V' (sift_starter/src/dog.cpp:79)." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.719+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Asserting false dependency between 'load' operation 'delay.buffer.V.load'(sift_starter/src/dog.cpp:75:17) from variable 'delay.buffer.V' and 'store' operation to variable 'delay.buffer.V' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.688+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Asserting false dependency between 'load' operation 'delay.buffer.V.load'(sift_starter/src/dog.cpp:75:17) from variable 'delay.buffer.V' and 'call' operation to function '_ssdm_op_SpecMemCore' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.681+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Asserting false dependency between 'store' operation to variable 'delay.buffer.V' and 'load' operation 'delay.buffer.V.load'(sift_starter/src/dog.cpp:75:17) from variable 'delay.buffer.V' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.674+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Asserting false dependency between 'store' operation to variable 'delay.buffer.V' and 'call' operation to function '_ssdm_op_SpecMemCore' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.667+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_SpecMemCore' and 'load' operation 'delay.buffer.V.load'(sift_starter/src/dog.cpp:75:17) from variable 'delay.buffer.V' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.632+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Asserting false dependency between 'call' operation to function '_ssdm_op_SpecMemCore' and 'store' operation to variable 'delay.buffer.V' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.626+0330" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'delay.buffer.V'." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.591+0330" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'delay::func' (sift_starter/src/dog.cpp:68:2) into func.1." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:28.581+0330" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'line_buffer::func' (sift_starter/src/dog.cpp:79) into func." projectName="sift_starter" solutionName="solution1" date="2019-12-04T23:12:27.869+0330" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

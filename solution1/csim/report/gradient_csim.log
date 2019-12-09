@@ -1,0 +1,5 @@
+   Compiling ../../../src/dog_test.cpp in debug mode
+   Generating csim.exe
+width = 640 height = 480 depth = 8
+WARNING: Hls::stream 'hls::stream<ap_axiu<8, 1, 1, 1> >.1' contains leftover data, which may result in RTL simulation hanging.
+INFO: [SIM 1] CSim done with 0 errors.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dog.cpp" path="/home/amin/sarbazi/hlsprojs/sift_starter/src/dog.cpp"/>
+    <originFiles name="dog.h" path="/home/amin/sarbazi/hlsprojs/sift_starter/src/dog.h"/>
+    <originFiles name="fxp_sqrt.h" path="/home/amin/sarbazi/hlsprojs/sift_starter/src/fxp_sqrt.h"/>
+  </source>
+  <testbench>
+    <originFiles name="dog_test.cpp" path="/home/amin/sarbazi/hlsprojs/sift_starter/src/dog_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

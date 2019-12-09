@@ -1,0 +1,297 @@
+
+
+================================================================
+== Vivado HLS Report for 'dog_func'
+================================================================
+* Date:           Wed Dec  4 23:12:29 2019
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        sift_starter
+* Solution:       solution1
+* Product family: qzynq
+* Target device:  xq7z020cl400-1q
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|      5.10|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    6|    6|    6|    6| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 6, depth = 7
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 7
+* Pipeline: 1
+  Pipeline-0: II = 6, D = 7, States = { 1 2 3 4 5 6 7 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+* FSM state operations: 
+
+ <State 1>: 2.39ns
+ST_1: line_buffer_delay_outs_V_addr_1 [1/1] 0.00ns
+.preheader.preheader:14  %line_buffer_delay_outs_V_addr_1 = getelementptr [3 x i8]* %line_buffer_delay_outs_V, i64 0, i64 1
+
+ST_1: line_buffer_delay_outs_V_load_1 [2/2] 2.39ns
+.preheader.preheader:15  %line_buffer_delay_outs_V_load_1 = load i8* %line_buffer_delay_outs_V_addr_1, align 1
+
+
+ <State 2>: 5.10ns
+ST_2: line_buffer_delays_2_rp_V_rea [1/1] 0.00ns
+.preheader.preheader:2  %line_buffer_delays_2_rp_V_rea = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %line_buffer_delays_2_rp_V_read)
+
+ST_2: line_buffer_delays_2_wp_V_rea [1/1] 0.00ns
+.preheader.preheader:5  %line_buffer_delays_2_wp_V_rea = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %line_buffer_delays_2_wp_V_read)
+
+ST_2: line_buffer_delay_outs_V_addr [1/1] 0.00ns
+.preheader.preheader:12  %line_buffer_delay_outs_V_addr = getelementptr [3 x i8]* %line_buffer_delay_outs_V, i64 0, i64 0
+
+ST_2: line_buffer_delay_outs_V_load_1 [1/2] 2.39ns
+.preheader.preheader:15  %line_buffer_delay_outs_V_load_1 = load i8* %line_buffer_delay_outs_V_addr_1, align 1
+
+ST_2: line_buffer_delay_outs_V_addr_2 [1/1] 0.00ns
+.preheader.preheader:16  %line_buffer_delay_outs_V_addr_2 = getelementptr [3 x i8]* %line_buffer_delay_outs_V, i64 0, i64 2
+
+ST_2: line_buffer_delay_outs_V_load_2 [2/2] 2.39ns
+.preheader.preheader:17  %line_buffer_delay_outs_V_load_2 = load i8* %line_buffer_delay_outs_V_addr_2, align 1
+
+ST_2: tmp_s [2/2] 2.71ns
+.preheader.preheader:20  %tmp_s = call fastcc { i8, i10, i10 } @dog_func.1(i10 %line_buffer_delays_2_wp_V_rea, i10 %line_buffer_delays_2_rp_V_rea, [3072 x i8]* %line_buffer_delays_buffer_V, i3 2, i8 %line_buffer_delay_outs_V_load_1)
+
+ST_2: line_buffer_delay_outs_V_load_3 [2/2] 2.39ns
+.preheader.preheader:27  %line_buffer_delay_outs_V_load_3 = load i8* %line_buffer_delay_outs_V_addr, align 1
+
+
+ <State 3>: 5.10ns
+ST_3: line_buffer_delay_outs_V_load [2/2] 2.39ns
+.preheader.preheader:13  %line_buffer_delay_outs_V_load = load i8* %line_buffer_delay_outs_V_addr, align 1
+
+ST_3: line_buffer_delay_outs_V_load_2 [1/2] 2.39ns
+.preheader.preheader:17  %line_buffer_delay_outs_V_load_2 = load i8* %line_buffer_delay_outs_V_addr_2, align 1
+
+ST_3: tmp_s [1/2] 2.71ns
+.preheader.preheader:20  %tmp_s = call fastcc { i8, i10, i10 } @dog_func.1(i10 %line_buffer_delays_2_wp_V_rea, i10 %line_buffer_delays_2_rp_V_rea, [3072 x i8]* %line_buffer_delays_buffer_V, i3 2, i8 %line_buffer_delay_outs_V_load_1)
+
+ST_3: call_ret5 [1/1] 0.00ns
+.preheader.preheader:21  %call_ret5 = extractvalue { i8, i10, i10 } %tmp_s, 0
+
+ST_3: line_buffer_delays_2_wp_V_wri [1/1] 0.00ns
+.preheader.preheader:22  %line_buffer_delays_2_wp_V_wri = extractvalue { i8, i10, i10 } %tmp_s, 1
+
+ST_3: line_buffer_delays_2_rp_V_wri [1/1] 0.00ns
+.preheader.preheader:23  %line_buffer_delays_2_rp_V_wri = extractvalue { i8, i10, i10 } %tmp_s, 2
+
+ST_3: stg_24 [1/1] 2.39ns
+.preheader.preheader:24  store i8 %call_ret5, i8* %line_buffer_delay_outs_V_addr_2, align 1
+
+ST_3: line_buffer_delay_outs_V_load_3 [1/2] 2.39ns
+.preheader.preheader:27  %line_buffer_delay_outs_V_load_3 = load i8* %line_buffer_delay_outs_V_addr, align 1
+
+
+ <State 4>: 2.71ns
+ST_4: line_buffer_delays_1_rp_V_rea [1/1] 0.00ns
+.preheader.preheader:3  %line_buffer_delays_1_rp_V_rea = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %line_buffer_delays_1_rp_V_read)
+
+ST_4: line_buffer_delays_1_wp_V_rea [1/1] 0.00ns
+.preheader.preheader:6  %line_buffer_delays_1_wp_V_rea = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %line_buffer_delays_1_wp_V_read)
+
+ST_4: line_buffer_delay_outs_V_load [1/2] 2.39ns
+.preheader.preheader:13  %line_buffer_delay_outs_V_load = load i8* %line_buffer_delay_outs_V_addr, align 1
+
+ST_4: tmp_2 [2/2] 2.71ns
+.preheader.preheader:28  %tmp_2 = call fastcc { i8, i10, i10 } @dog_func.1(i10 %line_buffer_delays_1_wp_V_rea, i10 %line_buffer_delays_1_rp_V_rea, [3072 x i8]* %line_buffer_delays_buffer_V, i3 1, i8 %line_buffer_delay_outs_V_load_3)
+
+
+ <State 5>: 5.10ns
+ST_5: tmp_2 [1/2] 2.71ns
+.preheader.preheader:28  %tmp_2 = call fastcc { i8, i10, i10 } @dog_func.1(i10 %line_buffer_delays_1_wp_V_rea, i10 %line_buffer_delays_1_rp_V_rea, [3072 x i8]* %line_buffer_delays_buffer_V, i3 1, i8 %line_buffer_delay_outs_V_load_3)
+
+ST_5: call_ret5_1 [1/1] 0.00ns
+.preheader.preheader:29  %call_ret5_1 = extractvalue { i8, i10, i10 } %tmp_2, 0
+
+ST_5: line_buffer_delays_1_wp_V_wri [1/1] 0.00ns
+.preheader.preheader:30  %line_buffer_delays_1_wp_V_wri = extractvalue { i8, i10, i10 } %tmp_2, 1
+
+ST_5: line_buffer_delays_1_rp_V_wri [1/1] 0.00ns
+.preheader.preheader:31  %line_buffer_delays_1_rp_V_wri = extractvalue { i8, i10, i10 } %tmp_2, 2
+
+ST_5: stg_34 [1/1] 2.39ns
+.preheader.preheader:32  store i8 %call_ret5_1, i8* %line_buffer_delay_outs_V_addr_1, align 1
+
+
+ <State 6>: 2.71ns
+ST_6: in_V_read [1/1] 0.00ns
+.preheader.preheader:1  %in_V_read = call i8 @_ssdm_op_Read.ap_vld.i8(i8 %in_V)
+
+ST_6: line_buffer_delays_0_rp_V_rea [1/1] 0.00ns
+.preheader.preheader:4  %line_buffer_delays_0_rp_V_rea = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %line_buffer_delays_0_rp_V_read)
+
+ST_6: line_buffer_delays_0_wp_V_rea [1/1] 0.00ns
+.preheader.preheader:7  %line_buffer_delays_0_wp_V_rea = call i10 @_ssdm_op_Read.ap_auto.i10(i10 %line_buffer_delays_0_wp_V_read)
+
+ST_6: tmp_4 [2/2] 2.71ns
+.preheader.preheader:34  %tmp_4 = call fastcc { i8, i10, i10 } @dog_func.1(i10 %line_buffer_delays_0_wp_V_rea, i10 %line_buffer_delays_0_rp_V_rea, [3072 x i8]* %line_buffer_delays_buffer_V, i3 0, i8 %in_V_read)
+
+
+ <State 7>: 5.10ns
+ST_7: stg_39 [1/1] 0.00ns
+.preheader.preheader:0  call void (...)* @_ssdm_op_SpecMemCore([3072 x i8]* %line_buffer_delays_buffer_V, [1 x i8]* @p_str2072, [12 x i8]* @p_str2074, [1 x i8]* @p_str2072, i32 -1, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072)
+
+ST_7: stg_40 [1/1] 0.00ns
+.preheader.preheader:8  call void (...)* @_ssdm_op_SpecInterface(i8 %in_V, [7 x i8]* @p_str2071, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2072) nounwind
+
+ST_7: stg_41 [1/1] 0.00ns
+.preheader.preheader:9  call void (...)* @_ssdm_op_SpecInterface(i32 0, [7 x i8]* @p_str2071, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2072)
+
+ST_7: stg_42 [1/1] 0.00ns
+.preheader.preheader:10  call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str2073, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2072) nounwind
+
+ST_7: stg_43 [1/1] 0.00ns
+.preheader.preheader:11  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2072) nounwind
+
+ST_7: out_data_V_write_assign [1/1] 0.00ns
+.preheader.preheader:18  %out_data_V_write_assign = call i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8(i8 %line_buffer_delay_outs_V_load_2, i8 %line_buffer_delay_outs_V_load_1, i8 %line_buffer_delay_outs_V_load)
+
+ST_7: tmp_1 [1/1] 0.00ns
+.preheader.preheader:19  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2075)
+
+ST_7: empty [1/1] 0.00ns
+.preheader.preheader:25  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2075, i32 %tmp_1)
+
+ST_7: tmp_3 [1/1] 0.00ns
+.preheader.preheader:26  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2075)
+
+ST_7: empty_3 [1/1] 0.00ns
+.preheader.preheader:33  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2075, i32 %tmp_3)
+
+ST_7: tmp_4 [1/2] 2.71ns
+.preheader.preheader:34  %tmp_4 = call fastcc { i8, i10, i10 } @dog_func.1(i10 %line_buffer_delays_0_wp_V_rea, i10 %line_buffer_delays_0_rp_V_rea, [3072 x i8]* %line_buffer_delays_buffer_V, i3 0, i8 %in_V_read)
+
+ST_7: call_ret [1/1] 0.00ns
+.preheader.preheader:35  %call_ret = extractvalue { i8, i10, i10 } %tmp_4, 0
+
+ST_7: line_buffer_delays_0_wp_V_wri [1/1] 0.00ns
+.preheader.preheader:36  %line_buffer_delays_0_wp_V_wri = extractvalue { i8, i10, i10 } %tmp_4, 1
+
+ST_7: line_buffer_delays_0_rp_V_wri [1/1] 0.00ns
+.preheader.preheader:37  %line_buffer_delays_0_rp_V_wri = extractvalue { i8, i10, i10 } %tmp_4, 2
+
+ST_7: stg_53 [1/1] 2.39ns
+.preheader.preheader:38  store i8 %call_ret, i8* %line_buffer_delay_outs_V_addr, align 1
+
+ST_7: mrv [1/1] 0.00ns
+.preheader.preheader:39  %mrv = insertvalue { i10, i10, i10, i10, i10, i10, i24 } undef, i10 %line_buffer_delays_0_wp_V_wri, 0
+
+ST_7: mrv_s [1/1] 0.00ns
+.preheader.preheader:40  %mrv_s = insertvalue { i10, i10, i10, i10, i10, i10, i24 } %mrv, i10 %line_buffer_delays_1_wp_V_wri, 1
+
+ST_7: mrv_1 [1/1] 0.00ns
+.preheader.preheader:41  %mrv_1 = insertvalue { i10, i10, i10, i10, i10, i10, i24 } %mrv_s, i10 %line_buffer_delays_2_wp_V_wri, 2
+
+ST_7: mrv_2 [1/1] 0.00ns
+.preheader.preheader:42  %mrv_2 = insertvalue { i10, i10, i10, i10, i10, i10, i24 } %mrv_1, i10 %line_buffer_delays_0_rp_V_wri, 3
+
+ST_7: mrv_3 [1/1] 0.00ns
+.preheader.preheader:43  %mrv_3 = insertvalue { i10, i10, i10, i10, i10, i10, i24 } %mrv_2, i10 %line_buffer_delays_1_rp_V_wri, 4
+
+ST_7: mrv_4 [1/1] 0.00ns
+.preheader.preheader:44  %mrv_4 = insertvalue { i10, i10, i10, i10, i10, i10, i24 } %mrv_3, i10 %line_buffer_delays_2_rp_V_wri, 5
+
+ST_7: mrv_6 [1/1] 0.00ns
+.preheader.preheader:45  %mrv_6 = insertvalue { i10, i10, i10, i10, i10, i10, i24 } %mrv_4, i24 %out_data_V_write_assign, 6
+
+ST_7: stg_61 [1/1] 0.00ns
+.preheader.preheader:46  ret { i10, i10, i10, i10, i10, i10, i24 } %mrv_6
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 8ns, clock uncertainty: 1ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
