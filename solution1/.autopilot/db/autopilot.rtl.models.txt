@@ -1,5 +1,3 @@
-dog_line_delays_buffer_V
-dog_line_delay_outs_V
-dog_func_1
-dog_func
+dog_buffer_0_V
+dog_buffer_13_V
 dog

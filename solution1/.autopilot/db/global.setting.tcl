@@ -1,6 +1,6 @@
 
 set TopModule "dog"
-set ClockPeriod "8.000000"
+set ClockPeriod "5.000000"
 set ClockList {ap_clk}
 set multiClockList {}
 set PortClockMap {}
@@ -15,7 +15,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 0
-set ResetLevelFlag 1
+set ResetLevelFlag 0
 set ResetStyle "control"
 set ResetSyncFlag 1
 set ResetRegisterFlag 0

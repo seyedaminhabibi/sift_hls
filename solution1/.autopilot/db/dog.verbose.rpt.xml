@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'dog'" level="0">
-<item name = "Date">Wed Dec  4 23:12:31 2019
+<item name = "Date">Wed Dec 18 18:23:42 2019
 </item>
 <item name = "Version">2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)</item>
 <item name = "Project">sift_starter</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">8.00, 5.10, 1.00</column>
+<column name="ap_clk">5.00, 3.97, 0.62</column>
 </table>
 </item>
 </section>
@@ -24,21 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">601, 601, 602, 602, none</column>
+<column name="">1246722, 1246722, 1246723, 1246723, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_dog_func_fu_157">dog_func, 6, 6, 6, 6, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">5, 5, 2, -, -, 3, no</column>
-<column name="- Loop 2">594, 594, 66, -, -, 9, no</column>
-<column name=" + Loop 2.1">64, 64, 8, -, -, 8, no</column>
+<column name="- Loop 1">1246720, 1246720, 4, 4, 10, 311680, yes</column>
 </table>
 </item>
 </section>
@@ -51,21 +48,20 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 68</column>
+<column name="Expression">-, -, 0, 156</column>
 <column name="FIFO">-, -, -, -</column>
-<column name="Instance">-, -, 163, 69</column>
-<column name="Memory">3, -, 0, 0</column>
-<column name="Multiplexer">-, -, -, 76</column>
-<column name="Register">-, -, 123, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">14, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 210</column>
+<column name="Register">-, -, 415, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">1, 0, ~0, ~0</specialColumn>
+<specialColumn name="Utilization (%)">5, 0, ~0, ~0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
-<column name="grp_dog_func_fu_157">dog_func, 0, 0, 163, 69</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
@@ -74,8 +70,20 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="line_delay_outs_V_U">dog_line_delay_outs_V, 1, 0, 0, 3, 8, 1, 24</column>
-<column name="line_delays_buffer_V_U">dog_line_delays_buffer_V, 2, 0, 0, 3072, 8, 1, 24576</column>
+<column name="buffer_0_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_1_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_2_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_3_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_4_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_5_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_6_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_7_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_8_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_9_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_10_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_11_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_12_V_U">dog_buffer_0_V, 1, 0, 0, 1024, 17, 1, 17408</column>
+<column name="buffer_13_V_U">dog_buffer_13_V, 1, 0, 0, 1024, 17, 1, 17408</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
@@ -84,54 +92,90 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_V_fu_318_p2">+, 0, 0, 4, 4, 1</column>
-<column name="j_V_fu_330_p2">+, 0, 0, 4, 4, 1</column>
-<column name="tmp_9_fu_170_p2">+, 0, 0, 2, 2, 1</column>
-<column name="exitcond1_fu_312_p2">icmp, 0, 0, 2, 4, 4</column>
-<column name="exitcond_fu_324_p2">icmp, 0, 0, 2, 4, 5</column>
-<column name="sel_tmp2_fu_223_p2">icmp, 0, 0, 1, 2, 1</column>
-<column name="sel_tmp_fu_209_p2">icmp, 0, 0, 1, 2, 1</column>
-<column name="tmp_1_fu_261_p2">icmp, 0, 0, 2, 2, 3</column>
-<column name="line_delays_rp_V_0_1_fu_253_p3">select, 0, 0, 10, 1, 5</column>
-<column name="line_delays_rp_V_1_1_fu_245_p3">select, 0, 0, 10, 1, 10</column>
-<column name="line_delays_rp_V_2_1_fu_229_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp1_fu_215_p3">select, 0, 0, 10, 1, 10</column>
-<column name="sel_tmp5_fu_237_p3">select, 0, 0, 10, 1, 5</column>
+<column name="i_V_fu_496_p2">+, 0, 0, 9, 9, 1</column>
+<column name="indvar_flatten_next_fu_456_p2">+, 0, 0, 19, 19, 1</column>
+<column name="indvars_iv_next_dup2_fu_514_p2">+, 0, 0, 10, 10, 10</column>
+<column name="rp_V_fu_482_p2">+, 0, 0, 10, 10, 10</column>
+<column name="tmp_7_fu_608_p2">+, 0, 0, 10, 10, 1</column>
+<column name="tmp_8_fu_573_p2">+, 0, 0, 10, 10, 1</column>
+<column name="wp_V_fu_468_p2">+, 0, 0, 10, 10, 10</column>
+<column name="ap_sig_122">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond_flatten_fu_450_p2">icmp, 0, 0, 7, 19, 19</column>
+<column name="exitcond_fu_462_p2">icmp, 0, 0, 4, 10, 10</column>
+<column name="tmp_fu_508_p2">icmp, 0, 0, 3, 9, 7</column>
+<column name="tmp_mid1_fu_502_p2">icmp, 0, 0, 3, 9, 7</column>
+<column name="indvars_iv_mid2_fu_520_p3">select, 0, 0, 10, 1, 10</column>
+<column name="p_0178_1_mid2_fu_474_p3">select, 0, 0, 10, 1, 10</column>
+<column name="p_0279_1_mid2_fu_488_p3">select, 0, 0, 10, 1, 10</column>
+<column name="p_1_mid2_fu_536_p3">select, 0, 0, 10, 1, 10</column>
+<column name="p_2_mid2_fu_544_p3">select, 0, 0, 9, 1, 9</column>
+<column name="p_mid2_fu_528_p3">select, 0, 0, 10, 1, 10</column>
+<column name="tmp_mid2_fu_552_p3">select, 0, 0, 1, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">6, 13, 1, 13</column>
-<column name="line_delays_0_rp_V_1_fu_98">10, 2, 10, 20</column>
-<column name="line_delays_0_wp_V_1_fu_86">10, 2, 10, 20</column>
-<column name="line_delays_1_rp_V_1_fu_102">10, 2, 10, 20</column>
-<column name="line_delays_1_wp_V_1_fu_90">10, 2, 10, 20</column>
-<column name="line_delays_2_rp_V_1_fu_106">10, 2, 10, 20</column>
-<column name="line_delays_2_wp_V_1_fu_94">10, 2, 10, 20</column>
-<column name="p_1_reg_146">4, 2, 4, 8</column>
-<column name="p_s_reg_135">4, 2, 4, 8</column>
-<column name="tmp_reg_123">2, 2, 2, 4</column>
+<column name="ap_NS_fsm">1, 7, 1, 7</column>
+<column name="buffer_0_V_address0">10, 3, 10, 30</column>
+<column name="buffer_10_V_address0">10, 3, 10, 30</column>
+<column name="buffer_11_V_address0">10, 3, 10, 30</column>
+<column name="buffer_12_V_address0">10, 3, 10, 30</column>
+<column name="buffer_1_V_address0">10, 3, 10, 30</column>
+<column name="buffer_2_V_address0">10, 3, 10, 30</column>
+<column name="buffer_3_V_address0">10, 3, 10, 30</column>
+<column name="buffer_4_V_address0">10, 3, 10, 30</column>
+<column name="buffer_5_V_address0">10, 3, 10, 30</column>
+<column name="buffer_6_V_address0">10, 3, 10, 30</column>
+<column name="buffer_7_V_address0">10, 3, 10, 30</column>
+<column name="buffer_8_V_address0">10, 3, 10, 30</column>
+<column name="buffer_9_V_address0">10, 3, 10, 30</column>
+<column name="in_V_V_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="indvar_flatten_reg_373">19, 2, 19, 38</column>
+<column name="indvars_iv_reg_384">10, 2, 10, 20</column>
+<column name="p_0178_1_reg_428">10, 2, 10, 20</column>
+<column name="p_0279_1_reg_439">10, 2, 10, 20</column>
+<column name="p_1_reg_406">10, 2, 10, 20</column>
+<column name="p_2_reg_417">9, 2, 9, 18</column>
+<column name="p_s_reg_395">10, 2, 10, 20</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">12, 0, 12, 0</column>
-<column name="ap_reg_grp_dog_func_fu_157_ap_start">1, 0, 1, 0</column>
-<column name="i_V_reg_513">4, 0, 4, 0</column>
-<column name="j_V_reg_521">4, 0, 4, 0</column>
-<column name="line_delays_0_rp_V_1_fu_98">10, 0, 10, 0</column>
-<column name="line_delays_0_wp_V_1_fu_86">10, 0, 10, 0</column>
-<column name="line_delays_1_rp_V_1_fu_102">10, 0, 10, 0</column>
-<column name="line_delays_1_wp_V_1_fu_90">10, 0, 10, 0</column>
-<column name="line_delays_2_rp_V_1_fu_106">10, 0, 10, 0</column>
-<column name="line_delays_2_wp_V_1_fu_94">10, 0, 10, 0</column>
-<column name="line_delays_rp_V_1_fu_58">10, 0, 10, 0</column>
-<column name="line_delays_rp_V_2_fu_62">10, 0, 10, 0</column>
-<column name="line_delays_rp_V_fu_54">10, 0, 10, 0</column>
-<column name="p_1_reg_146">4, 0, 4, 0</column>
-<column name="p_s_reg_135">4, 0, 4, 0</column>
-<column name="tmp_9_reg_460">2, 0, 2, 0</column>
-<column name="tmp_reg_123">2, 0, 2, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="buffer_0_V_load_reg_749">17, 0, 17, 0</column>
+<column name="buffer_10_V_load_reg_799">17, 0, 17, 0</column>
+<column name="buffer_11_V_load_reg_804">17, 0, 17, 0</column>
+<column name="buffer_12_V_load_reg_809">17, 0, 17, 0</column>
+<column name="buffer_1_V_load_reg_754">17, 0, 17, 0</column>
+<column name="buffer_2_V_load_reg_759">17, 0, 17, 0</column>
+<column name="buffer_3_V_load_reg_764">17, 0, 17, 0</column>
+<column name="buffer_4_V_load_reg_769">17, 0, 17, 0</column>
+<column name="buffer_5_V_load_reg_774">17, 0, 17, 0</column>
+<column name="buffer_6_V_load_reg_779">17, 0, 17, 0</column>
+<column name="buffer_8_V_load_reg_789">17, 0, 17, 0</column>
+<column name="buffer_9_V_load_reg_794">17, 0, 17, 0</column>
+<column name="exitcond_flatten_reg_619">1, 0, 1, 0</column>
+<column name="exitcond_reg_628">1, 0, 1, 0</column>
+<column name="indvar_flatten_next_reg_623">19, 0, 19, 0</column>
+<column name="indvar_flatten_reg_373">19, 0, 19, 0</column>
+<column name="indvars_iv_mid2_reg_655">10, 0, 10, 0</column>
+<column name="indvars_iv_reg_384">10, 0, 10, 0</column>
+<column name="p_0178_1_mid2_reg_633">10, 0, 10, 0</column>
+<column name="p_0178_1_reg_428">10, 0, 10, 0</column>
+<column name="p_0279_1_mid2_reg_639">10, 0, 10, 0</column>
+<column name="p_0279_1_reg_439">10, 0, 10, 0</column>
+<column name="p_1_mid2_reg_665">10, 0, 10, 0</column>
+<column name="p_1_reg_406">10, 0, 10, 0</column>
+<column name="p_2_mid2_reg_670">9, 0, 9, 0</column>
+<column name="p_2_reg_417">9, 0, 9, 0</column>
+<column name="p_Val2_s_reg_784">17, 0, 17, 0</column>
+<column name="p_mid2_reg_660">10, 0, 10, 0</column>
+<column name="p_s_reg_395">10, 0, 10, 0</column>
+<column name="tmp_8_reg_744">10, 0, 10, 0</column>
+<column name="tmp_V_fu_62">17, 0, 17, 0</column>
+<column name="tmp_mid1_reg_645">1, 0, 1, 0</column>
+<column name="tmp_mid2_reg_675">1, 0, 1, 0</column>
+<column name="tmp_reg_650">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -142,14 +186,17 @@
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="ap_clk">in, 1, ap_ctrl_hs, dog, return value</column>
-<column name="ap_rst">in, 1, ap_ctrl_hs, dog, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, dog, return value</column>
 <column name="ap_start">in, 1, ap_ctrl_hs, dog, return value</column>
 <column name="ap_done">out, 1, ap_ctrl_hs, dog, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_hs, dog, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, dog, return value</column>
-<column name="in_V">in, 8, ap_none, in_V, scalar</column>
-<column name="out_data_V">out, 24, ap_vld, out_data_V, pointer</column>
-<column name="out_data_V_ap_vld">out, 1, ap_vld, out_data_V, pointer</column>
+<column name="in_V_V_TDATA">in, 24, axis, in_V_V, pointer</column>
+<column name="in_V_V_TVALID">in, 1, axis, in_V_V, pointer</column>
+<column name="in_V_V_TREADY">out, 1, axis, in_V_V, pointer</column>
+<column name="out_V_data_V_TDATA">in, 256, axis, out_V_data_V, pointer</column>
+<column name="out_V_data_V_TVALID">in, 1, axis, out_V_data_V, pointer</column>
+<column name="out_V_data_V_TREADY">out, 1, axis, out_V_data_V, pointer</column>
 </table>
 </item>
 </section>

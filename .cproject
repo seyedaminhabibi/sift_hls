@@ -29,6 +29,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/home/amin/sarbazi/hlsprojs"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/auto_cc/include"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1741872697" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
@@ -46,6 +47,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/home/amin/sarbazi/hlsprojs"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/auto_cc/include"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.813137649" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
@@ -113,6 +115,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/home/amin/sarbazi/hlsprojs"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/auto_cc/include"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.335528601" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -125,6 +128,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/include/etc"/>
+									<listOptionValue builtIn="false" value="/home/amin/sarbazi/hlsprojs"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/auto_cc/include"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1172558746" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>

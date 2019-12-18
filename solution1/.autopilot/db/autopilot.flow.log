@@ -1,163 +1,163 @@
-@I [HLS-0] Workspace /home/amin/sarbazi/hlsprojs/sift_starter/solution1 opened at Wed Dec 04 23:06:56 +0330 2019
-@I [HLS-100] Command "config_clock -quiet -name default -period 8 -default=false "
-@I [SYN-201] Setting up clock 'default' with a period of 8ns.
-@I [HLS-100] Command 'config_clock' returned 0; elapsed 0.000296Total elapsed time: 1.55 sec.
+@I [HLS-0] Workspace /home/amin/sarbazi/hlsprojs/sift_starter/solution1 opened at Wed Dec 18 18:21:20 +0330 2019
+@I [HLS-100] Command "config_clock -quiet -name default -period 5 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 5ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0.00013Total elapsed time: 0.288 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 8.6e-05Total elapsed time: 1.57 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 4.2e-05Total elapsed time: 0.288 sec.
 @I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/qzynq/qzynq "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.lib "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/xilinx_interface.lib "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000612Total elapsed time: 1.59 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000237Total elapsed time: 0.289 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000291Total elapsed time: 1.59 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000124Total elapsed time: 0.289 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000421Total elapsed time: 1.60 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000164Total elapsed time: 0.290 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000353Total elapsed time: 1.61 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000137Total elapsed time: 0.290 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000246Total elapsed time: 1.61 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003567Total elapsed time: 1.61 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000109Total elapsed time: 0.290 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001464Total elapsed time: 0.290 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000289Total elapsed time: 1.62 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000106Total elapsed time: 0.290 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000241Total elapsed time: 1.63 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.6e-05Total elapsed time: 0.291 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000154Total elapsed time: 1.63 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.9e-05Total elapsed time: 0.291 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000148Total elapsed time: 1.64 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.010766Total elapsed time: 1.92 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 5.7e-05Total elapsed time: 0.291 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004162Total elapsed time: 0.293 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_old.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001684Total elapsed time: 1.97 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000656Total elapsed time: 0.295 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_vivado.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001549Total elapsed time: 1.99 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000578Total elapsed time: 0.295 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000398Total elapsed time: 1.104 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000138Total elapsed time: 0.297 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/xilinx_interface.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000373Total elapsed time: 1.105 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.6e-05Total elapsed time: 0.298 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000286Total elapsed time: 1.106 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00183Total elapsed time: 1.107 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 7.1e-05Total elapsed time: 0.298 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000423Total elapsed time: 0.298 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001571Total elapsed time: 1.110 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008448Total elapsed time: 1.111 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000487Total elapsed time: 0.299 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00225Total elapsed time: 0.299 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/qzynq/dsp48e1.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000208Total elapsed time: 1.112 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 6.4e-05Total elapsed time: 0.299 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 1.2e-05Total elapsed time: 1.112 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 0.299 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 3.8e-05Total elapsed time: 1.113 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.5e-05Total elapsed time: 0.300 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed medium "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.2e-05Total elapsed time: 1.113 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.035148Total elapsed time: 1.140 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 5e-06Total elapsed time: 0.300 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.012394Total elapsed time: 0.301 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/qzynq/qzynq.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002591Total elapsed time: 1.145 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000983Total elapsed time: 0.302 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000836Total elapsed time: 1.146 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000354Total elapsed time: 0.303 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.005268Total elapsed time: 1.152 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001664Total elapsed time: 0.305 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008855Total elapsed time: 1.162 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00294Total elapsed time: 0.308 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016315Total elapsed time: 1.203 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.026351Total elapsed time: 1.203 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006347Total elapsed time: 0.314 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00968Total elapsed time: 0.315 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.021461Total elapsed time: 1.249 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007958Total elapsed time: 0.323 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01857Total elapsed time: 1.292 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006659Total elapsed time: 0.329 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006669Total elapsed time: 1.299 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002725Total elapsed time: 0.332 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000295Total elapsed time: 1.300 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000114Total elapsed time: 0.333 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00136Total elapsed time: 1.302 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000542Total elapsed time: 0.333 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.152167Total elapsed time: 1.595 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.240235Total elapsed time: 1.619 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.108335Total elapsed time: 0.442 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.140615Total elapsed time: 0.442 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000373Total elapsed time: 1.623 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.245295Total elapsed time: 1.623 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.245828Total elapsed time: 1.624 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000122Total elapsed time: 0.444 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142737Total elapsed time: 0.444 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.142933Total elapsed time: 0.444 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 1.4e-05Total elapsed time: 1.624 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 6e-06Total elapsed time: 0.444 sec.
 @I [HLS-100] Command "import_lib /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/qzynq/qzynq_fpv6 "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv7.lib "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_hp.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001402Total elapsed time: 1.627 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007996Total elapsed time: 1.633 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000585Total elapsed time: 0.445 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003178Total elapsed time: 0.448 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000327Total elapsed time: 1.642 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00014Total elapsed time: 0.452 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/xilinx_interface.hlp "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000295Total elapsed time: 1.667 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 9.6e-05Total elapsed time: 0.452 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000234Total elapsed time: 1.668 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001311Total elapsed time: 1.668 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0001Total elapsed time: 0.452 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000415Total elapsed time: 0.452 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001799Total elapsed time: 1.671 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006937Total elapsed time: 1.672 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008237Total elapsed time: 1.673 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000447Total elapsed time: 0.453 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002146Total elapsed time: 0.453 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00266Total elapsed time: 0.454 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/qzynq/qzynq_hp.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001988Total elapsed time: 1.676 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.033513Total elapsed time: 1.682 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000647Total elapsed time: 0.454 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.012759Total elapsed time: 0.457 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/qzynq/qzynq_fpv6.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00318Total elapsed time: 1.686 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003686Total elapsed time: 1.686 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001281Total elapsed time: 0.459 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001493Total elapsed time: 0.459 sec.
 @I [HLS-100] Command "set_part xq7z020cl400-1q "
 @I [HLS-100] Command "add_library xilinx/qzynq/qzynq:xq7z020:cl400:-1q "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 1.3e-05Total elapsed time: 1.720 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 6e-06Total elapsed time: 0.463 sec.
 @I [HLS-100] Command "license_isbetapart xq7z020 "
-@I [HLS-100] Command 'license_isbetapart' returned 1; elapsed 0.013124Total elapsed time: 1.734 sec.
+@I [HLS-100] Command 'license_isbetapart' returned 1; elapsed 0.005707Total elapsed time: 0.469 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 1.6e-05Total elapsed time: 1.736 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 6e-06Total elapsed time: 0.470 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 2.8e-05Total elapsed time: 1.736 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.5e-05Total elapsed time: 0.470 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.2e-05Total elapsed time: 1.737 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.020034Total elapsed time: 1.763 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 5e-06Total elapsed time: 0.470 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.008527Total elapsed time: 0.471 sec.
 @I [HLS-100] Command "add_library xilinx/qzynq/qzynq_fpv6 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 1.7e-05Total elapsed time: 1.765 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.0046Total elapsed time: 1.768 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 0.471 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.001177Total elapsed time: 0.472 sec.
 @I [HLS-10] Setting target device to 'xq7z020cl400-1q'
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.033217Total elapsed time: 1.769 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.012973Total elapsed time: 0.472 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 1.3e-05Total elapsed time: 1.769 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 0.472 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 2.8e-05Total elapsed time: 1.769 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.4e-05Total elapsed time: 0.473 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.3e-05Total elapsed time: 1.770 sec.
-@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.374464Total elapsed time: 1.771 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 7e-06Total elapsed time: 0.473 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.190586Total elapsed time: 0.473 sec.
 @I [HLS-100] Command "set_part xq7z020cl400-1q -tool vivado "
 @I [HLS-100] Command "add_library xilinx/qzynq/qzynq:xq7z020:cl400:-1q "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 1.2e-05Total elapsed time: 1.777 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 0.476 sec.
 @I [HLS-100] Command "license_isbetapart xq7z020 "
-@I [HLS-100] Command 'license_isbetapart' returned 1; elapsed 7e-05Total elapsed time: 1.778 sec.
+@I [HLS-100] Command 'license_isbetapart' returned 1; elapsed 3.4e-05Total elapsed time: 0.476 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 1e-05Total elapsed time: 1.780 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 4e-06Total elapsed time: 0.477 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 2.6e-05Total elapsed time: 1.780 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.2e-05Total elapsed time: 0.477 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed slow "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 1.1e-05Total elapsed time: 1.781 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.005496Total elapsed time: 1.782 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 4e-06Total elapsed time: 0.477 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.002212Total elapsed time: 0.478 sec.
 @I [HLS-100] Command "add_library xilinx/qzynq/qzynq_fpv6 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 9e-06Total elapsed time: 1.783 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0.002945Total elapsed time: 1.785 sec.
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.014566Total elapsed time: 1.787 sec.
-@I [HLS-100] Command "create_clock -period 8 -name default "
-@I [HLS-100] Command 'create_clock' returned 0; elapsed 0.002492Total elapsed time: 1.813 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 5e-06Total elapsed time: 0.478 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.001437Total elapsed time: 0.479 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.006357Total elapsed time: 0.480 sec.
+@I [HLS-100] Command "create_clock -period 5 -name default "
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0.001338Total elapsed time: 0.481 sec.
 @I [HLS-100] Command "csynth_design "
 @I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
 @I [HLS-10] Analyzing design file 'sift_starter/src/dog.cpp' ... 
@@ -167,14 +167,14 @@
 Checking before pre-process: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit   -I "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/systemc/include" -I "/opt/Xilinx/Vivado_HLS/2016.2/include" -I "/opt/Xilinx/Vivado_HLS/2016.2/include/ap_sysc" -fexceptions -I "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot" -include etc/autopilot_ssdm_op.h "sift_starter/src/dog.cpp"  -o "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.00.o"
 
 @I [HLS-100] Command "is_encrypted /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.00.o "
-@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.00014Total elapsed time: 60.390 sec.
-@I [HLS-0] Syntax Checker time: 58 seconds per iteration
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 9.5e-05Total elapsed time: 17.214 sec.
+@I [HLS-0] Syntax Checker time: 16 seconds per iteration
 @I [HLS-0] 
 Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "sift_starter/src/dog.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.0.cpp"
 
 @I [HLS-0] GCC PP time: 0 seconds per iteration
 @I [HLS-100] Command "list_core -type functional_unit "
-@I [HLS-100] Command 'list_core' returned 0; elapsed 9.2e-05Total elapsed time: 61.188 sec.
+@I [HLS-100] Command 'list_core' returned 0; elapsed 9.2e-05Total elapsed time: 17.432 sec.
 @I [HLS-0] Marker-Pragma convertor: /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.0.cpp /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.0.cpp.ap-line.cpp /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.0.cpp.ap-line.cpp.CXX 1
 @I [HLS-0] 
 Source processor: exec /opt/Xilinx/Vivado_HLS/2016.2/tps/lnx64/jre/bin/java -Xmx512m -classpath   "/opt/Xilinx/Vivado_HLS/2016.2/lib/classes/autopilot.sourceprocessor.jar:/opt/Xilinx/Vivado_HLS/2016.2/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar:/opt/Xilinx/Vivado_HLS/2016.2/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar:/opt/Xilinx/Vivado_HLS/2016.2/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar:/opt/Xilinx/Vivado_HLS/2016.2/lib/classes/com.ibm.icu_4.4.2.v20110208.jar:/opt/Xilinx/Vivado_HLS/2016.2/lib/classes/jargs.jar:/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/eclipse/plugins/org.eclipse.emf.common_2.10.1.v20150123-0348.jar:/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.10.2.v20150123-0348.jar:/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.10.2.v20150123-0348.jar:/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar:/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.0.cpp.ap-line.cpp"  -m "dog" -o "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.0.cpp.ap-cdt.cpp" --pp --directive /home/amin/sarbazi/hlsprojs/sift_starter/solution1/solution1.directive --source /home/amin/sarbazi/hlsprojs/sift_starter/src/dog.cpp --error /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db --funcunit "AddSub AddSub_DSP AddSubnS DAddSub_fulldsp DAddSub_nodsp DDiv DExp_fulldsp DExp_meddsp DExp_nodsp DLog_fulldsp DLog_meddsp DLog_nodsp DMul_fulldsp DMul_maxdsp DMul_meddsp DMul_nodsp DRSqrt DRecip DSqrt DivnS FAddSub_fulldsp FAddSub_nodsp FDiv FExp_fulldsp FExp_meddsp FExp_nodsp FLog_fulldsp FLog_meddsp FLog_nodsp FMul_fulldsp FMul_maxdsp FMul_meddsp FMul_nodsp FRSqrt_fulldsp FRSqrt_nodsp FRecip_fulldsp FRecip_nodsp FSqrt HAddSub_nodsp HDiv HMul_fulldsp HMul_maxdsp HMul_nodsp HSqrt Mul Mul2S Mul3S Mul4S Mul5S Mul6S Mul_LUT MulnS MuxnS" --ve --vetcl /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db --ca --es --gf --pd --p2d /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db --sd --scff /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/.systemc_flag --ad
@@ -189,19 +189,19 @@ Error:Syntax error in source:)
  *__first = __tmp;
 @I [HLS-0] Marker-Pragma convertor: /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pp.0.cpp.ap-cdt.cpp /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pragma.0.cpp /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pragma.0.cpp.ap-line.CXX 0
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/pragma.status.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000178Total elapsed time: 285.606 sec.
-@I [HLS-0] CDT processor time: 224 seconds per iteration
-@I [HLS-0] Pragma handling time: 4 seconds per iteration
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000154Total elapsed time: 106.601 sec.
+@I [HLS-0] CDT processor time: 89 seconds per iteration
+@I [HLS-0] Pragma handling time: 1 seconds per iteration
 @I [HLS-0] 
 Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc" -hls -fno-exceptions  -D__llvm__  -CC -E "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h  -o "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pragma.2.cpp"
 
 @I [HLS-0] exec clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot" -I "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.g.bc"
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/ve_warning.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000266Total elapsed time: 317.123 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000147Total elapsed time: 120.735 sec.
 @I [HLS-10] Validating synthesis directives ...
 @0 [HLS-0] Validating synthesis directives ...
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/pragma.status.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00016Total elapsed time: 317.125 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0001Total elapsed time: 120.736 sec.
 @I [HLS-0] Linking all ...
 @I [HLS-0] exec llvm-ld  "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.bc"  -disable-opt  -L/opt/Xilinx/Vivado_HLS/2016.2/lnx64/lib -lm_basic -o "/home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.pre"
 @I [HLS-0] Link time: 2 seconds per iteration
@@ -210,59 +210,102 @@ Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xili
 @I [HLS-0] Link time: 2 seconds per iteration
 @I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 "
 @I [HLS-100] Command "cleanup_all_models "
-@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 3e-05Total elapsed time: 321.418 sec.
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 1.5e-05Total elapsed time: 126.11 sec.
 @I [HLS-10] Starting code transformations ...
 @0 [HLS-0] Starting code transformations ...
 @I [HLS-0] std xform: transform -hls -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -indvars -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -basicaa  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loop-simplify -indvars -instcombine  -simplifycfg -mem2reg -loop-simplify -indvars -instcombine  -gvn -gvn -instcombine -adce  -break-crit-edges  -simplifycfg -loop-delete  -global-array-opt -dce -dse -adce  -find-syn-modules -top dog  -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -interface-preproc  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -globaldce -mem2reg -instcombine -dce   -gvn -globaldce -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete -reassociate  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -func-inst -deadargelim  -promote-dbg-pointer  -norm-name   /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.g.0.bc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.g.1.bc -f  -phase std-opt
-@I [HLS-0] Std xform time: 4 seconds per iteration
+@I [XFORM-603] Inlining function 'ap_fixed_base<17, 8, false, (ap_q_mode)0, (ap_o_mode)3, 0>::quantization_adjust' into 'ap_fixed_base<17, 8, false, (ap_q_mode)0, (ap_o_mode)3, 0>::ap_fixed_base<48, 9, false, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+@I [HLS-0] Std xform time: 3 seconds per iteration
 @I [HLS-100] Command "is_encrypted /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.g.1.bc "
-@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.000101Total elapsed time: 327.310 sec.
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.000196Total elapsed time: 131.291 sec.
 @I [HLS-10] Checking synthesizability ...
 @0 [HLS-0] Checking synthesizability ...
 @I [HLS-0] syn check 1/2: transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine  -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -simplifycfg -mem2reg -globaldce -resolve-double-ptr  -dce -deadargelim -dce -instcombine  -function-inline -globaldce -dce  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -ptrLegalization   -simplifycfg -deadargelim  -instcombine -dce -inst-simplify  -function-uniquify -directive-preproc -mem2reg -dse -dce  -globaldce    /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.g.1.bc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.g.2.prechk.bc -f
 @I [HLS-0] Syn check 1/2 time: 0 seconds per iteration
 @I [HLS-0] syn check 2/2: transform -syn-check   /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@W [SYNCHK-77] The top function 'dog' (sift_starter/src/dog.cpp:57) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+@I [SYNCHK-10] 0 error(s), 1 warning(s).
 @I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
 @I [HLS-0] Compiler optimizing ...
 @I [HLS-0] Share syncheck's 1.bc for syn flow: copy /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.g.1.bc to /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.1.bc
 @I [HLS-0] presyn 1: transform -hls -tmp /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db -type-info  -function-uniquify -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce -function-uniquify  -resource-proc  -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine  -clib-intrinsic-prepare -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -deadargelim  -instcombine -dce  -pointer-simplify -dce  -port-alignment -dce  -interface-preproc  -data-pack -instcombine -dce   -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -loop-simplify -indvars -instcombine  -gvn -loop-simplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -auto-loop-pipeline  -inst-simplify  -interface-preproc  -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -attach-range  -gvn -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce  -ptrArgReplace -mem2reg  -instcombine -simplifycfg -dce  -auto-par -instcombine -dce  -array-transform-check  -array-reshape -instcombine -simplifycfg -dce  -ptrArgReplace -deadargelim -mem2reg  -instcombine -simplifycfg -dce   -indvars -loop-simplify -loop-bound -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -duplicate-dataflow-processes -globaldce  -array-partition -instcombine -simplifycfg -dce  -ptrArgReplace -global-constprop -deadargelim -mem2reg  -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg  -instcombine -simplifycfg -dce   -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce  -ptrArgReplace -mem2reg  -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -function-inline -globaldce  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -loop-delete -instcombine -simplifycfg  -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments  -loop-stream -instcombine -simplifycfg -dce -globaldce  -stream-intrinsic-preproc -dce  -check-ap-stream -loop-simplify -eliminate-keepreads  -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse  -check-dataflow-syntax  -legalize-stream-variable -legalize-global -legalize-global-1  -extract-subproc -dce -dead-channel-elimination  -canonicalize-gep -globaldce -dce -gvn -deadargelim  -scalar-propagation -deadargelim -globaldce -mem2reg  -check-dataflow-channels -function-stream -annotate-dataflow-channels -dce -globaldce  -prop-fifo-spec -internal-stream-gen  -canonicalize-gep -globaldce -dce -gvn -deadargelim   -mergereturn -indvars -loop-simplify -instcombine  -array-stream -instcombine -simplifycfg -dce  -bundle-memfifo-ops -deadargelim    -function-uniquify -directive-preproc -mem2reg -dse -dce  -group-axi-access    -licm -simplifycfg -dce -loop-delete  -norm-name  /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.1.bc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.1.tmp.bc -f
-@I [XFORM-1101] Packing variable 'out.data.V' (sift_starter/src/dog.cpp:100) into a 24-bit variable.
-@I [XFORM-502] Unrolling all loops for pipelining in function 'line_buffer::func' (sift_starter/src/dog.cpp:30:1).
-@I [XFORM-501] Unrolling loop 'Loop-1' (sift_starter/src/dog.cpp:88) in function 'line_buffer::func' completely.
-@I [XFORM-501] Unrolling loop 'Loop-2' (sift_starter/src/dog.h:30) in function 'line_buffer::func' completely.
-@I [XFORM-501] Unrolling loop 'Loop-3' (sift_starter/src/dog.cpp:92) in function 'line_buffer::func' completely.
-@I [XFORM-102] Partitioning array 'tmp.data.V' (sift_starter/src/dog.cpp:86) automatically.
-@I [XFORM-102] Automatically partitioning small array 'line.delays.wp.V' (sift_starter/src/dog.cpp:102) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'line.delays.rp.V' (sift_starter/src/dog.cpp:102) completely based on array size.
-@I [XFORM-101] Partitioning array 'line.delays.wp.V' (sift_starter/src/dog.cpp:102) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'line.delays.rp.V' (sift_starter/src/dog.cpp:102) in dimension 1 completely.
+@I [XFORM-1101] Packing variable 'out.V.data.V' (sift_starter/src/dog.cpp:57) into a 255-bit variable.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-1.1' (sift_starter/src/dog.cpp:75) in function 'dog' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.1' (sift_starter/src/dog.cpp:85) in function 'dog' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.2' (sift_starter/src/dog.cpp:102) in function 'dog' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.3' (sift_starter/src/dog.cpp:108) in function 'dog' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.4' (sift_starter/src/dog.cpp:116) in function 'dog' completely.
+@I [XFORM-102] Partitioning array 'line_o.data.V' (sift_starter/src/dog.cpp:67) automatically.
+@I [XFORM-102] Partitioning array 'col_outs.data.V' (sift_starter/src/dog.cpp:69) automatically.
+@I [XFORM-101] Partitioning array 'buffer.V' (sift_starter/src/dog.cpp:61) in dimension 1 completely.
 @I [HLS-0] Presyn 1 time: 1 seconds per iteration
 @I [HLS-0] presyn 2: transform -hls -keep-callgraph -scalarrepl -mem2reg  -port-alignment -attach-range -dce  -pipe-mux-gen  -indvars -loop-bound  -inst-simplify -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -globaldce -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -interface-preproc -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -simplify-global-access  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg -loop-simplify -auto-burst   -norm-name /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.2.bc -f  -phase presyn
-@I [XFORM-401] Performing if-conversion on hyperblock from (sift_starter/src/dog.cpp:64:3) to (sift_starter/src/dog.h:43:7) in function 'dog'... converting 4 basic blocks.
-@I [HLS-0] Presyn 2 time: 0 seconds per iteration
+@I [HLS-0] Presyn 2 time: 1 seconds per iteration
 @I [HLS-100] Command "is_encrypted /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.2.bc "
-@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.000124Total elapsed time: 331.525 sec.
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.000192Total elapsed time: 136.623 sec.
 @I [HLS-0] build ssdm: transform -hls  -function-uniquify -auto-function-inline -globaldce  -ptrArgReplace -mem2reg -instcombine -dce  -reset-lda  -loop-simplify -indvars -licm -loop-dep  -loop-bound -licm -loop-simplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify   -array-burst -promote-global-argument -dce  -axi4-lower -array-seg-normalize  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm  -inst-simplify -dce  -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine  -dce   -deadargelim -doublePtrSimplify  -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound  -loop-simplify -loop-preproc  -constprop -global-constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -deadargelim -dce  -scalar-propagation -deadargelim -globaldce -mem2reg  -interface-preproc -interface-gen  -deadargelim -directive-preproc -inst-simplify -dce  -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loop-simplify  -clean-region -io-protocol  -find-region -mem2reg  -bitop-raise  -inst-simplify -inst-rectify -instcombine -adce -deadargelim  -loop-simplify -phi-opt -bitop-raise  -cfgopt -simplifycfg -strip-dead-prototypes  -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify  -dce -bitop-lower  -loop-rewind -pointer-simplify -dce -cfgopt  -read-loop-dep -dce -bitwidth -norm-name -legalize    -cdfg-build  /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.2.bc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
-@W [XFORM-631] Renaming function 'line_buffer::func' (sift_starter/src/dog.cpp:79) into func.
-@W [XFORM-631] Renaming function 'delay::func' (sift_starter/src/dog.cpp:68:2) into func.1.
-@W [ANALYSIS-52] Found false intra dependency for variable 'delay.buffer.V'.
-@W [ANALYSIS-52] Asserting false dependency between 'call' operation to function '_ssdm_op_SpecMemCore' and 'store' operation to variable 'delay.buffer.V' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation.
-@W [ANALYSIS-52] Asserting false dependency between 'call' operation to function '_ssdm_op_SpecMemCore' and 'load' operation 'delay.buffer.V.load'(sift_starter/src/dog.cpp:75:17) from variable 'delay.buffer.V' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation.
-@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'delay.buffer.V' and 'call' operation to function '_ssdm_op_SpecMemCore' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation.
-@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'delay.buffer.V' and 'load' operation 'delay.buffer.V.load'(sift_starter/src/dog.cpp:75:17) from variable 'delay.buffer.V' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation.
-@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'delay.buffer.V.load'(sift_starter/src/dog.cpp:75:17) from variable 'delay.buffer.V' and 'call' operation to function '_ssdm_op_SpecMemCore' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation.
-@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'delay.buffer.V.load'(sift_starter/src/dog.cpp:75:17) from variable 'delay.buffer.V' and 'store' operation to variable 'delay.buffer.V' according to false dependency pragma(sift_starter/src/dog.cpp:73:1), this may lead to incorrect RTL generation.
-@W [ANALYSIS-52] Found false intra dependency for variable 'line_buffer.delay_outs.V' (sift_starter/src/dog.cpp:79).
-@W [ANALYSIS-52] Found false intra dependency for variable 'line_buffer.delay_outs.V' (sift_starter/src/dog.cpp:79).
-@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'line_buffer.delay_outs.V.load.3'(sift_starter/src/dog.cpp:96:2) from variable 'line_buffer.delay_outs.V'(sift_starter/src/dog.cpp:79) and 'store' operation to variable 'line_buffer.delay_outs.V'(sift_starter/src/dog.cpp:79) according to false dependency pragma(sift_starter/src/dog.cpp:94:1), this may lead to incorrect RTL generation.
-@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'line_buffer.delay_outs.V'(sift_starter/src/dog.cpp:79) and 'load' operation 'line_buffer.delay_outs.V.load.3'(sift_starter/src/dog.cpp:96:2) from variable 'line_buffer.delay_outs.V'(sift_starter/src/dog.cpp:79) according to false dependency pragma(sift_starter/src/dog.cpp:94:1), this may lead to incorrect RTL generation.
+@I [XFORM-541] Flattening a loop nest 'Loop-1' (sift_starter/src/dog.cpp:73:10) in function 'dog'.
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[0].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[1].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[2].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[3].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[4].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[5].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[6].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[7].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[8].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[9].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[10].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[11].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[12].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false intra dependency for variable 'buffer[13].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[0].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[1].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[2].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[3].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[4].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[5].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[6].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[7].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[8].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[9].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[10].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[11].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[12].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Found false inter dependency for variable 'buffer[13].V' (sift_starter/src/dog.cpp:61).
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[0].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[0].V.load'(sift_starter/src/dog.cpp:84:31) from variable 'buffer[0].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[0].V.load'(sift_starter/src/dog.cpp:84:31) from variable 'buffer[0].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[0].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[1].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[1].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[1].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[1].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[1].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[1].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[2].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[2].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[2].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[2].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[2].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[2].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[3].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[3].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[3].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[3].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[3].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[3].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[4].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[4].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[4].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[4].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[4].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[4].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[5].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[5].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[5].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[5].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[5].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[5].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[6].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[6].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[6].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[6].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[6].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[6].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[7].V'(sift_starter/src/dog.cpp:61) and 'load' operation '__Val2__'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[7].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation '__Val2__'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[7].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[7].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[8].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[8].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[8].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[8].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[8].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[8].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[9].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[9].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[9].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[9].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[9].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[9].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[10].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[10].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[10].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[10].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[10].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[10].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[11].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[11].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[11].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[11].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[11].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[11].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'store' operation to variable 'buffer[12].V'(sift_starter/src/dog.cpp:61) and 'load' operation 'buffer[12].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[12].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
+@W [ANALYSIS-52] Asserting false dependency between 'load' operation 'buffer[12].V.load'(sift_starter/src/dog.cpp:91:29) from variable 'buffer[12].V'(sift_starter/src/dog.cpp:61) and 'store' operation to variable 'buffer[12].V'(sift_starter/src/dog.cpp:61), this may lead to incorrect RTL generation.
 @I [HLS-0] Build ssdm time: 1 seconds per iteration
 @I [HLS-100] Command "is_encrypted /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.o.3.bc "
-@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 8.5e-05Total elapsed time: 333.754 sec.
+@I [HLS-100] Command 'is_encrypted' returned 0; elapsed 0.000185Total elapsed time: 139.140 sec.
 @I [HLS-0] Finish building internal data model.
-@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 5.11776Total elapsed time: 334.138 sec.
-@I [HLS-111] Elapsed time: 12.4116 seconds; current memory usage: 149 MB.
-@I [HLS-100] Command 'elaborate' returned 0; elapsed 11.5954Total elapsed time: 334.165 sec.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 9.37998Total elapsed time: 140.509 sec.
+@I [HLS-111] Elapsed time: 15.1468 seconds; current memory usage: 291 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 14.7253Total elapsed time: 140.520 sec.
 @I [HLS-100] Command "autosyn "
 @I [HLS-10] Starting hardware synthesis ...
 @0 [HLS-0] Starting hardware synthesis ...
@@ -270,205 +313,28 @@ Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xili
 @I [HLS-10] Synthesizing 'dog' ...
 @0 [HLS-0] Synthesizing 'dog' ...
 @I [HLS-100] Command "ap_set_top_model dog "
-@W [SYN-103] Legalizing function name 'dog_func.1' to 'dog_func_1'.
-@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0.00033Total elapsed time: 334.167 sec.
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0.000122Total elapsed time: 140.526 sec.
 @I [HLS-100] Command "get_model_list dog -filter all-wo-channel -topdown "
-@I [HLS-100] Command 'get_model_list' returned 0; elapsed 6e-05Total elapsed time: 334.167 sec.
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 8.5e-05Total elapsed time: 140.527 sec.
 @I [HLS-100] Command "preproc_iomode -model dog "
-@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 6.3e-05Total elapsed time: 334.167 sec.
-@I [HLS-100] Command "preproc_iomode -model dog_func "
-@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 7.9e-05Total elapsed time: 334.168 sec.
-@I [HLS-100] Command "preproc_iomode -model dog_func.1 "
-@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 3.6e-05Total elapsed time: 334.168 sec.
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0.000703Total elapsed time: 140.547 sec.
 @I [HLS-100] Command "get_model_list dog -filter all-wo-channel "
-@I [HLS-100] Command 'get_model_list' returned 0; elapsed 5.2e-05Total elapsed time: 334.169 sec.
-@I [HLS-0] Model list for configure: dog_func.1 dog_func dog
-@I [HLS-0] Configuring Module : dog_func.1 ...
-@I [HLS-100] Command "set_default_model dog_func.1 "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 3.4e-05Total elapsed time: 334.170 sec.
-@I [HLS-100] Command "apply_spec_resource_limit dog_func.1 "
-@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 1.4e-05Total elapsed time: 334.170 sec.
-@I [HLS-0] Configuring Module : dog_func ...
-@I [HLS-100] Command "set_default_model dog_func "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 2.6e-05Total elapsed time: 334.170 sec.
-@I [HLS-100] Command "apply_spec_resource_limit dog_func "
-@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 1.5e-05Total elapsed time: 334.170 sec.
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 8.6e-05Total elapsed time: 140.552 sec.
+@I [HLS-0] Model list for configure: dog
 @I [HLS-0] Configuring Module : dog ...
 @I [HLS-100] Command "set_default_model dog "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1e-05Total elapsed time: 334.170 sec.
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0.000149Total elapsed time: 140.554 sec.
 @I [HLS-100] Command "apply_spec_resource_limit dog "
-@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 2.5e-05Total elapsed time: 334.171 sec.
-@I [HLS-0] Model list for preprocess: dog_func.1 dog_func dog
-@I [HLS-0] Preprocessing Module: dog_func.1 ...
-@I [HLS-100] Command "set_default_model dog_func.1 "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1.8e-05Total elapsed time: 334.171 sec.
-@I [HLS-100] Command "cdfg_preprocess -model dog_func.1 "
-@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.00037Total elapsed time: 334.171 sec.
-@I [HLS-100] Command "rtl_gen_preprocess dog_func.1 "
-@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000934Total elapsed time: 334.172 sec.
-@I [HLS-0] Preprocessing Module: dog_func ...
-@I [HLS-100] Command "set_default_model dog_func "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 3.5e-05Total elapsed time: 334.173 sec.
-@I [HLS-100] Command "cdfg_preprocess -model dog_func "
-@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.000653Total elapsed time: 334.174 sec.
-@I [HLS-100] Command "rtl_gen_preprocess dog_func "
-@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000806Total elapsed time: 334.175 sec.
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0.000108Total elapsed time: 140.554 sec.
+@I [HLS-0] Model list for preprocess: dog
 @I [HLS-0] Preprocessing Module: dog ...
 @I [HLS-100] Command "set_default_model dog "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 1.3e-05Total elapsed time: 334.175 sec.
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0.000117Total elapsed time: 140.555 sec.
 @I [HLS-100] Command "cdfg_preprocess -model dog "
-@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.001249Total elapsed time: 334.176 sec.
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.00443Total elapsed time: 140.594 sec.
 @I [HLS-100] Command "rtl_gen_preprocess dog "
-@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000755Total elapsed time: 334.177 sec.
-@I [HLS-0] Model list for synthesis: dog_func.1 dog_func dog
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Scheduling module 'dog_func_1' 
-@0 [HLS-0] -- Scheduling module 'dog_func_1' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "set_default_model dog_func.1 "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 4.7e-05Total elapsed time: 334.178 sec.
-@I [HLS-100] Command "schedule -model dog_func.1 "
-@I [SCHED-11] Starting scheduling ...
-@I [SCHED-61] Pipelining function 'dog_func.1'.
-@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
-@I [SCHED-11] Finished scheduling.
-@I [HLS-100] Command 'schedule' returned 0; elapsed 0.02532Total elapsed time: 334.229 sec.
-@I [HLS-111] Elapsed time: 0.040614 seconds; current memory usage: 149 MB.
-@I [HLS-100] Command "report -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.verbose.sched.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.00391Total elapsed time: 334.259 sec.
-@I [HLS-100] Command "db_write -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.sched.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.004235Total elapsed time: 334.264 sec.
-@I [HLS-0] Finish scheduling dog_func.1.
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Exploring micro-architecture for module 'dog_func_1' 
-@0 [HLS-0] -- Exploring micro-architecture for module 'dog_func_1' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "set_default_model dog_func.1 "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 4.6e-05Total elapsed time: 334.266 sec.
-@I [HLS-100] Command "bind -model dog_func.1 "
-@I [BIND-110] clear=
-@I [BIND-110] debug=
-@I [BIND-110] drf=
-@I [BIND-110] effort=
-@I [BIND-110] fast_refine=
-@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
-@I [BIND-110] global_opt=
-@I [BIND-110] gsearch=
-@I [BIND-110] help=
-@I [BIND-110] help-hidden=
-@I [BIND-110] min_mem_port=
-@I [BIND-110] min_op=
-@I [BIND-110] minreg=
-@I [BIND-110] ml=
-@I [BIND-110] model=dog_func.1
-@I [BIND-110] no_false_path=
-@I [BIND-110] no_min_op=
-@I [BIND-110] normalize=
-@I [BIND-110] quiet=
-@I [BIND-110] refine=
-@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
-@I [BIND-110] search=
-@I [BIND-110] tight_delay=
-@I [BIND-110] verbose=
-@I [BIND-110] wFF=
-@I [BIND-110] wFU=
-@I [BIND-110] wMUX=
-@I [BIND-110] wNET=
-@I [BIND-100] Starting micro-architecture generation ...
-@I [BIND-101] Performing variable lifetime analysis.
-@I [BIND-101] Exploring resource sharing.
-@I [BIND-101] Binding ...
-@I [BIND-100] Finished micro-architecture generation.
-@I [HLS-100] Command 'bind' returned 0; elapsed 0.006788Total elapsed time: 334.274 sec.
-@I [HLS-111] Elapsed time: 0.020188 seconds; current memory usage: 149 MB.
-@I [HLS-100] Command "report -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.verbose.bind.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.010025Total elapsed time: 334.311 sec.
-@I [HLS-100] Command "db_write -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.bind.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.008638Total elapsed time: 334.320 sec.
-@I [HLS-0] Finish binding dog_func.1.
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Scheduling module 'dog_func' 
-@0 [HLS-0] -- Scheduling module 'dog_func' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "set_default_model dog_func "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 8.8e-05Total elapsed time: 334.324 sec.
-@I [HLS-100] Command "schedule -model dog_func "
-@I [SCHED-11] Starting scheduling ...
-@I [SCHED-61] Pipelining function 'dog_func'.
-@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)
-   between 'store' operation (sift_starter/src/dog.cpp:98) of variable 'call_ret', sift_starter/src/dog.cpp:98 on array 'line_buffer_delay_outs_V' and 'load' operation ('line_buffer_delay_outs_V_load_3', sift_starter/src/dog.cpp:96) on array 'line_buffer_delay_outs_V'.
-@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 2, distance = 1)
-   between 'store' operation (sift_starter/src/dog.cpp:98) of variable 'call_ret', sift_starter/src/dog.cpp:98 on array 'line_buffer_delay_outs_V' and 'load' operation ('line_buffer_delay_outs_V_load_3', sift_starter/src/dog.cpp:96) on array 'line_buffer_delay_outs_V'.
-@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 3, distance = 1)
-   between 'store' operation (sift_starter/src/dog.cpp:98) of variable 'call_ret', sift_starter/src/dog.cpp:98 on array 'line_buffer_delay_outs_V' and 'load' operation ('line_buffer_delay_outs_V_load_3', sift_starter/src/dog.cpp:96) on array 'line_buffer_delay_outs_V'.
-@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 4, distance = 1)
-   between 'store' operation (sift_starter/src/dog.cpp:98) of variable 'call_ret', sift_starter/src/dog.cpp:98 on array 'line_buffer_delay_outs_V' and 'load' operation ('line_buffer_delay_outs_V_load_3', sift_starter/src/dog.cpp:96) on array 'line_buffer_delay_outs_V'.
-@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 5, distance = 1)
-   between 'call' operation ('tmp_4', sift_starter/src/dog.cpp:98) to 'dog_func.1' and 'call' operation ('tmp_s', sift_starter/src/dog.cpp:96) to 'dog_func.1'.
-@I [SCHED-61] Pipelining result: Target II: 1, Final II: 6, Depth: 7.
-@I [SCHED-11] Finished scheduling.
-@I [HLS-100] Command 'schedule' returned 0; elapsed 0.082108Total elapsed time: 334.614 sec.
-@I [HLS-111] Elapsed time: 0.10791 seconds; current memory usage: 149 MB.
-@I [HLS-100] Command "report -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.verbose.sched.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.01451Total elapsed time: 334.656 sec.
-@I [HLS-100] Command "db_write -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.sched.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.013631Total elapsed time: 334.698 sec.
-@I [HLS-0] Finish scheduling dog_func.
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Exploring micro-architecture for module 'dog_func' 
-@0 [HLS-0] -- Exploring micro-architecture for module 'dog_func' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "set_default_model dog_func "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 9.3e-05Total elapsed time: 334.713 sec.
-@I [HLS-100] Command "bind -model dog_func "
-@I [BIND-110] clear=
-@I [BIND-110] debug=
-@I [BIND-110] drf=
-@I [BIND-110] effort=
-@I [BIND-110] fast_refine=
-@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
-@I [BIND-110] global_opt=
-@I [BIND-110] gsearch=
-@I [BIND-110] help=
-@I [BIND-110] help-hidden=
-@I [BIND-110] min_mem_port=
-@I [BIND-110] min_op=
-@I [BIND-110] minreg=
-@I [BIND-110] ml=
-@I [BIND-110] model=dog_func
-@I [BIND-110] no_false_path=
-@I [BIND-110] no_min_op=
-@I [BIND-110] normalize=
-@I [BIND-110] quiet=
-@I [BIND-110] refine=
-@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
-@I [BIND-110] search=
-@I [BIND-110] tight_delay=
-@I [BIND-110] verbose=
-@I [BIND-110] wFF=
-@I [BIND-110] wFU=
-@I [BIND-110] wMUX=
-@I [BIND-110] wNET=
-@I [BIND-100] Starting micro-architecture generation ...
-@I [BIND-101] Performing variable lifetime analysis.
-@I [BIND-101] Exploring resource sharing.
-@I [BIND-101] Binding ...
-@I [BIND-100] Finished micro-architecture generation.
-@I [HLS-100] Command 'bind' returned 0; elapsed 0.03276Total elapsed time: 334.838 sec.
-@I [HLS-111] Elapsed time: 0.068411 seconds; current memory usage: 150 MB.
-@I [HLS-100] Command "report -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.verbose.bind.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.029844Total elapsed time: 334.895 sec.
-@I [HLS-100] Command "db_write -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.bind.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.017494Total elapsed time: 334.938 sec.
-@I [HLS-0] Finish binding dog_func.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.00203Total elapsed time: 140.596 sec.
+@I [HLS-0] Model list for synthesis: dog
 @I [HLS-10] ----------------------------------------------------------------
 @0 [HLS-0] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'dog' 
@@ -476,16 +342,18 @@ Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xili
 @I [HLS-10] ----------------------------------------------------------------
 @0 [HLS-0] ----------------------------------------------------------------
 @I [HLS-100] Command "set_default_model dog "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 3.7e-05Total elapsed time: 334.941 sec.
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0.00012Total elapsed time: 140.599 sec.
 @I [HLS-100] Command "schedule -model dog "
 @I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining loop 'Loop 1'.
+@I [SCHED-61] Pipelining result: Target II: 10, Final II: 4, Depth: 4.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-100] Command 'schedule' returned 0; elapsed 0.079645Total elapsed time: 335.94 sec.
-@I [HLS-111] Elapsed time: 0.134371 seconds; current memory usage: 150 MB.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.138712Total elapsed time: 140.959 sec.
+@I [HLS-111] Elapsed time: 0.17318 seconds; current memory usage: 292 MB.
 @I [HLS-100] Command "report -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.verbose.sched.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.014783Total elapsed time: 335.137 sec.
+@I [HLS-100] Command 'report' returned 0; elapsed 0.032002Total elapsed time: 141.32 sec.
 @I [HLS-100] Command "db_write -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.sched.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.024701Total elapsed time: 335.187 sec.
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.039464Total elapsed time: 141.84 sec.
 @I [HLS-0] Finish scheduling dog.
 @I [HLS-10] ----------------------------------------------------------------
 @0 [HLS-0] ----------------------------------------------------------------
@@ -494,7 +362,7 @@ Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xili
 @I [HLS-10] ----------------------------------------------------------------
 @0 [HLS-0] ----------------------------------------------------------------
 @I [HLS-100] Command "set_default_model dog "
-@I [HLS-100] Command 'set_default_model' returned 0; elapsed 4.4e-05Total elapsed time: 335.190 sec.
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0.000125Total elapsed time: 141.87 sec.
 @I [HLS-100] Command "bind -model dog "
 @I [BIND-110] clear=
 @I [BIND-110] debug=
@@ -529,79 +397,19 @@ Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xili
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding ...
 @I [BIND-100] Finished micro-architecture generation.
-@I [HLS-100] Command 'bind' returned 0; elapsed 0.048522Total elapsed time: 335.288 sec.
-@I [HLS-111] Elapsed time: 0.094456 seconds; current memory usage: 150 MB.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.079807Total elapsed time: 141.179 sec.
+@I [HLS-111] Elapsed time: 0.165148 seconds; current memory usage: 292 MB.
 @I [HLS-100] Command "report -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.verbose.bind.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.023958Total elapsed time: 335.339 sec.
+@I [HLS-100] Command 'report' returned 0; elapsed 0.101953Total elapsed time: 141.291 sec.
 @I [HLS-100] Command "db_write -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.bind.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.00762Total elapsed time: 335.367 sec.
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.047076Total elapsed time: 141.363 sec.
 @I [HLS-0] Finish binding dog.
 @I [HLS-100] Command "get_model_list dog -filter all-wo-channel "
-@I [HLS-100] Command 'get_model_list' returned 0; elapsed 4.9e-05Total elapsed time: 335.367 sec.
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 7.8e-05Total elapsed time: 141.364 sec.
 @I [HLS-0] Preprocessing for RTLGen ...
-@I [HLS-100] Command "rtl_gen_preprocess dog_func.1 "
-@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000539Total elapsed time: 335.368 sec.
-@I [HLS-100] Command "rtl_gen_preprocess dog_func "
-@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000498Total elapsed time: 335.368 sec.
 @I [HLS-100] Command "rtl_gen_preprocess dog "
-@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.000497Total elapsed time: 335.369 sec.
-@I [HLS-0] Model list for RTL generation: dog_func.1 dog_func dog
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Generating RTL for module 'dog_func_1' 
-@0 [HLS-0] -- Generating RTL for module 'dog_func_1' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "create_rtl_model dog_func.1 -vendor xilinx -mg_file /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.compgen.tcl "
-@I [RTGEN-100] Finished creating RTL model for 'dog_func_1'.
-@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.008499Total elapsed time: 335.379 sec.
-@I [HLS-111] Elapsed time: 0.045483 seconds; current memory usage: 151 MB.
-@I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000406Total elapsed time: 335.381 sec.
-@I [HLS-100] Command "gen_rtl dog_func.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/systemc/dog_func_1 -synmodules dog_func.1 dog_func dog "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001267Total elapsed time: 335.384 sec.
-@I [HLS-100] Command "gen_rtl dog_func.1 -style xilinx -f -lang vhdl -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/vhdl/dog_func_1 "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.00067Total elapsed time: 335.385 sec.
-@I [HLS-100] Command "gen_rtl dog_func.1 -style xilinx -f -lang vlog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/verilog/dog_func_1 "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.001049Total elapsed time: 335.386 sec.
-@I [HLS-100] Command "gen_tb_info dog_func.1 -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1 -p /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db "
-@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.003734Total elapsed time: 335.414 sec.
-@I [HLS-100] Command "report -model dog_func.1 -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/report/dog_func_1_csynth.rpt -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.006787Total elapsed time: 335.422 sec.
-@I [HLS-100] Command "report -model dog_func.1 -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/report/dog_func_1_csynth.xml -f -x "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.006329Total elapsed time: 335.429 sec.
-@I [HLS-100] Command "report -model dog_func.1 -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.verbose.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.014605Total elapsed time: 335.468 sec.
-@I [HLS-100] Command "db_write -model dog_func.1 -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.008089Total elapsed time: 335.477 sec.
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-10] -- Generating RTL for module 'dog_func' 
-@0 [HLS-0] -- Generating RTL for module 'dog_func' 
-@I [HLS-10] ----------------------------------------------------------------
-@0 [HLS-0] ----------------------------------------------------------------
-@I [HLS-100] Command "create_rtl_model dog_func -vendor xilinx -mg_file /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.compgen.tcl "
-@I [RTGEN-100] Finished creating RTL model for 'dog_func'.
-@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.057726Total elapsed time: 335.621 sec.
-@I [HLS-111] Elapsed time: 0.121375 seconds; current memory usage: 152 MB.
-@I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000784Total elapsed time: 335.623 sec.
-@I [HLS-100] Command "gen_rtl dog_func -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/systemc/dog_func -synmodules dog_func.1 dog_func dog "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.003913Total elapsed time: 335.652 sec.
-@I [HLS-100] Command "gen_rtl dog_func -style xilinx -f -lang vhdl -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/vhdl/dog_func "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.002878Total elapsed time: 335.656 sec.
-@I [HLS-100] Command "gen_rtl dog_func -style xilinx -f -lang vlog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/verilog/dog_func "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.003158Total elapsed time: 335.660 sec.
-@I [HLS-100] Command "gen_tb_info dog_func -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func -p /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db "
-@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.004494Total elapsed time: 335.665 sec.
-@I [HLS-100] Command "report -model dog_func -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/report/dog_func_csynth.rpt -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.009506Total elapsed time: 335.699 sec.
-@I [HLS-100] Command "report -model dog_func -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/report/dog_func_csynth.xml -f -x "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.006016Total elapsed time: 335.705 sec.
-@I [HLS-100] Command "report -model dog_func -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.verbose.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.031758Total elapsed time: 335.762 sec.
-@I [HLS-100] Command "db_write -model dog_func -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.014457Total elapsed time: 335.801 sec.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.002128Total elapsed time: 141.366 sec.
+@I [HLS-0] Model list for RTL generation: dog
 @I [HLS-10] ----------------------------------------------------------------
 @0 [HLS-0] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'dog' 
@@ -609,63 +417,60 @@ Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xili
 @I [HLS-10] ----------------------------------------------------------------
 @0 [HLS-0] ----------------------------------------------------------------
 @I [HLS-100] Command "create_rtl_model dog -vendor xilinx -mg_file /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.compgen.tcl "
-@I [RTGEN-500] Setting interface mode on port 'dog/in_V' to 'ap_none'.
-@I [RTGEN-500] Setting interface mode on port 'dog/out_data_V' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'dog/in_V_V' to 'axis'.
+@I [RTGEN-500] Setting interface mode on port 'dog/out_V_data_V' to 'axis'.
 @I [RTGEN-500] Setting interface mode on function 'dog' to 'ap_ctrl_hs'.
+@W [RTGEN-101] Port 'dog/out_V_data_V_TDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'dog/out_V_data_V_TVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'dog/out_V_data_V_TREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'dog/out_V_data_V_TREADY' to 0.
 @I [RTGEN-100] Finished creating RTL model for 'dog'.
-@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.071995Total elapsed time: 335.996 sec.
-@I [HLS-111] Elapsed time: 0.181505 seconds; current memory usage: 153 MB.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.14129Total elapsed time: 141.538 sec.
+@I [HLS-111] Elapsed time: 0.307503 seconds; current memory usage: 293 MB.
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00048Total elapsed time: 335.997 sec.
-@I [HLS-100] Command "gen_rtl dog -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/systemc/dog -synmodules dog_func.1 dog_func dog "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.002783Total elapsed time: 336.1 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000822Total elapsed time: 141.549 sec.
+@I [HLS-100] Command "gen_rtl dog -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/systemc/dog -synmodules dog "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.009154Total elapsed time: 141.572 sec.
 @I [HLS-100] Command "gen_rtl dog -istop -style xilinx -f -lang vhdl -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/vhdl/dog "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.039918Total elapsed time: 336.90 sec.
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.105406Total elapsed time: 141.700 sec.
 @I [HLS-100] Command "gen_rtl dog -istop -style xilinx -f -lang vlog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/verilog/dog "
-@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.018787Total elapsed time: 336.134 sec.
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.036122Total elapsed time: 141.737 sec.
 @I [HLS-100] Command "export_constraint_db -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.constraint.tcl -f -tool general "
-@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0.000281Total elapsed time: 336.135 sec.
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0.000286Total elapsed time: 141.738 sec.
 @I [HLS-100] Command "report -model dog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.design.xml -verbose -f -dv "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.048817Total elapsed time: 336.233 sec.
+@I [HLS-100] Command 'report' returned 0; elapsed 0.065735Total elapsed time: 141.805 sec.
 @I [HLS-100] Command "report -model dog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.sdaccel.xml -verbose -f -sdaccel "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.016538Total elapsed time: 336.250 sec.
+@I [HLS-100] Command 'report' returned 0; elapsed 0.13759Total elapsed time: 141.968 sec.
 @I [HLS-100] Command "gen_tb_info dog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog -p /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db "
-@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.000566Total elapsed time: 336.275 sec.
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.001785Total elapsed time: 141.970 sec.
 @I [HLS-100] Command "report -model dog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/report/dog_csynth.rpt -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.007958Total elapsed time: 336.283 sec.
+@I [HLS-100] Command 'report' returned 0; elapsed 0.063651Total elapsed time: 142.35 sec.
 @I [HLS-100] Command "report -model dog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/syn/report/dog_csynth.xml -f -x "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.005625Total elapsed time: 336.289 sec.
+@I [HLS-100] Command 'report' returned 0; elapsed 0.045774Total elapsed time: 142.82 sec.
 @I [HLS-100] Command "report -model dog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.verbose.rpt -verbose -f "
-@I [HLS-100] Command 'report' returned 0; elapsed 0.038483Total elapsed time: 336.376 sec.
+@I [HLS-100] Command 'report' returned 0; elapsed 0.164272Total elapsed time: 142.247 sec.
 @I [HLS-100] Command "db_write -model dog -o /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.adb -f "
-@I [HLS-100] Command 'db_write' returned 0; elapsed 0.031878Total elapsed time: 336.433 sec.
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.076543Total elapsed time: 142.349 sec.
 @I [HLS-100] Command "sc_get_clocks dog "
-@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 1.3e-05Total elapsed time: 336.520 sec.
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 1.4e-05Total elapsed time: 142.412 sec.
 @I [HLS-100] Command "sc_get_portdomain dog "
-@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 9e-06Total elapsed time: 336.521 sec.
-@I [HLS-0] Model list for RTL component generation: dog_func.1 dog_func dog
-@I [HLS-0] Handling components in module [dog_func_1] ... 
-@I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000403Total elapsed time: 336.524 sec.
-@I [HLS-0] Handling components in module [dog_func] ... 
-@I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000419Total elapsed time: 336.525 sec.
+@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 1.1e-05Total elapsed time: 142.413 sec.
+@I [HLS-0] Model list for RTL component generation: dog
 @I [HLS-0] Handling components in module [dog] ... 
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.compgen.tcl "
-@I [HLS-0] Found component dog_line_delays_buffer_V.
-@I [HLS-0] Append model dog_line_delays_buffer_V
-@I [HLS-0] Found component dog_line_delay_outs_V.
-@I [HLS-0] Append model dog_line_delay_outs_V
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000871Total elapsed time: 336.526 sec.
-@I [HLS-0] Append model dog_func_1
-@I [HLS-0] Append model dog_func
+@I [HLS-0] Found component dog_buffer_0_V.
+@I [HLS-0] Append model dog_buffer_0_V
+@I [HLS-0] Found component dog_buffer_13_V.
+@I [HLS-0] Append model dog_buffer_13_V
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000903Total elapsed time: 142.416 sec.
 @I [HLS-0] Append model dog
 @I [HLS-0] Generating RTL model list ...
-@I [HLS-0] All models in this session: dog_line_delays_buffer_V dog_line_delay_outs_V dog_func_1 dog_func dog
-@I [HLS-0] To file: write model dog_line_delays_buffer_V
-@I [HLS-0] To file: write model dog_line_delay_outs_V
-@I [HLS-0] To file: write model dog_func_1
-@I [HLS-0] To file: write model dog_func
+@I [HLS-0] All models in this session: dog_buffer_0_V dog_buffer_13_V dog
+@I [HLS-0] To file: write model dog_buffer_0_V
+@I [HLS-0] To file: write model dog_buffer_13_V
 @I [HLS-0] To file: write model dog
 @I [HLS-0] Finished generating RTL model list.
 
@@ -674,80 +479,76 @@ Source preprocessing: exec clang -fno-limit-debug-info -gcc-toolchain "/opt/Xili
 @I [HLS-0] CAS Generation done.
 @I [HLS-0] CBC Generation done.
 @I [HLS-100] Command "export_ssdm /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/a.export.ll "
-@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0.000868Total elapsed time: 336.529 sec.
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0.000999Total elapsed time: 142.419 sec.
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00058Total elapsed time: 336.537 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000373Total elapsed time: 142.428 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001189Total elapsed time: 336.564 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002754Total elapsed time: 336.565 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001498Total elapsed time: 142.481 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003852Total elapsed time: 142.482 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00062Total elapsed time: 336.566 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000853Total elapsed time: 142.492 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001786Total elapsed time: 336.569 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00201Total elapsed time: 142.495 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00015Total elapsed time: 336.569 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000237Total elapsed time: 142.496 sec.
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000321Total elapsed time: 336.570 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000328Total elapsed time: 142.496 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/qzynq/qzynq.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002525Total elapsed time: 336.574 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001957Total elapsed time: 142.500 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000965Total elapsed time: 336.575 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000452Total elapsed time: 142.501 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.004312Total elapsed time: 336.580 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.002144Total elapsed time: 142.503 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007394Total elapsed time: 336.612 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00322Total elapsed time: 142.507 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015982Total elapsed time: 336.629 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.024487Total elapsed time: 336.629 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.006596Total elapsed time: 142.513 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.0104Total elapsed time: 142.514 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.020786Total elapsed time: 336.674 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.008741Total elapsed time: 142.523 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016748Total elapsed time: 336.716 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00716Total elapsed time: 142.530 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/dds_compiler.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.007363Total elapsed time: 336.724 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003213Total elapsed time: 142.534 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000319Total elapsed time: 336.724 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000168Total elapsed time: 142.534 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.001425Total elapsed time: 336.726 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000654Total elapsed time: 142.535 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.223325Total elapsed time: 337.190 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.306875Total elapsed time: 337.191 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.111085Total elapsed time: 142.646 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.148695Total elapsed time: 142.647 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000367Total elapsed time: 337.195 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.312241Total elapsed time: 337.196 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.312733Total elapsed time: 337.196 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000302Total elapsed time: 142.650 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.153816Total elapsed time: 142.651 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.154255Total elapsed time: 142.651 sec.
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/qzynq/qzynq_fpv6.gen "
 @I [HLS-100] Command "source /opt/Xilinx/Vivado_HLS/2016.2/common/technology/xilinx/common/xilinx_fpv6.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003408Total elapsed time: 337.200 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003909Total elapsed time: 337.200 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.003411Total elapsed time: 142.655 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.00391Total elapsed time: 142.655 sec.
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000328Total elapsed time: 337.202 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000327Total elapsed time: 142.657 sec.
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000384Total elapsed time: 337.203 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000305Total elapsed time: 142.658 sec.
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000304Total elapsed time: 337.204 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000304Total elapsed time: 142.659 sec.
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000296Total elapsed time: 337.205 sec.
-@I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func_1.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000366Total elapsed time: 337.206 sec.
-@I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog_func.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000462Total elapsed time: 337.207 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.000294Total elapsed time: 142.660 sec.
 @I [HLS-100] Command "source /home/amin/sarbazi/hlsprojs/sift_starter/solution1/.autopilot/db/dog.compgen.tcl "
-@I [RTMG-278] Implementing memory 'dog_line_delays_buffer_V_ram' using block RAMs.
-@I [RTMG-278] Implementing memory 'dog_line_delay_outs_V_ram' using block RAMs.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.060694Total elapsed time: 337.340 sec.
+@I [RTMG-278] Implementing memory 'dog_buffer_0_V_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'dog_buffer_13_V_ram' using block RAMs.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.057506Total elapsed time: 142.748 sec.
 @I [HLS-10] Finished generating all RTL models.
 @0 [HLS-0] Finished generating all RTL models.
 @I [SYSC-301] Generating SystemC RTL for dog.
 @I [VHDL-304] Generating VHDL RTL for dog.
 @I [VLOG-307] Generating Verilog RTL for dog.
-@I [HLS-100] Command 'autosyn' returned 0; elapsed 1.49737Total elapsed time: 337.350 sec.
-@I [HLS-100] Command 'csynth_design' returned 0; elapsed 13.0938Total elapsed time: 337.350 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 13.5107Total elapsed time: 337.351 sec.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 1.68271Total elapsed time: 142.752 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 16.4089Total elapsed time: 142.753 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 16.6204Total elapsed time: 142.753 sec.
 @I [HLS-100] Command "cleanup_all "
-@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.016352Total elapsed time: 337.392 sec.
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.009633Total elapsed time: 142.763 sec.

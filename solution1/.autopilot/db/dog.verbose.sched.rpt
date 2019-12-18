@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'dog'
 ================================================================
-* Date:           Wed Dec  4 23:12:30 2019
+* Date:           Wed Dec 18 18:23:41 2019
 
 * Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
 * Project:        sift_starter
@@ -20,31 +20,29 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |   8.00|      5.10|        1.00|
+    |ap_clk  |   5.00|      3.97|        0.62|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +-----+-----+-----+-----+---------+
-    |  Latency  |  Interval | Pipeline|
-    | min | max | min | max |   Type  |
-    +-----+-----+-----+-----+---------+
-    |  601|  601|  602|  602|   none  |
-    +-----+-----+-----+-----+---------+
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  1246722|  1246722|  1246723|  1246723|   none  |
+    +---------+---------+---------+---------+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        +-------------+-----+-----+----------+-----------+-----------+------+----------+
-        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
-        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
-        +-------------+-----+-----+----------+-----------+-----------+------+----------+
-        |- Loop 1     |    5|    5|         2|          -|          -|     3|    no    |
-        |- Loop 2     |  594|  594|        66|          -|          -|     9|    no    |
-        | + Loop 2.1  |   64|   64|         8|          -|          -|     8|    no    |
-        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        +----------+---------+---------+----------+-----------+-----------+--------+----------+
+        |          |      Latency      | Iteration|  Initiation Interval  |  Trip  |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- Loop 1  |  1246720|  1246720|         4|          4|         10|  311680|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+--------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -68,357 +66,518 @@ IsDontTouch: 0
 HasImplIP: 0
 IsGatedGlobalClock: 0
 
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 4, depth = 4
+
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states: 12
-* Pipeline: 0
+* Number of FSM states: 6
+* Pipeline: 1
+  Pipeline-0: II = 4, D = 4, States = { 2 3 4 5 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 
 	2  / true
 2 --> 
-	3  / true
+	6  / (exitcond_flatten)
+	3  / (!exitcond_flatten)
 3 --> 
-	2  / (!tmp_1)
-	4  / (tmp_1)
+	4  / true
 4 --> 
-	5  / (!exitcond1)
-5 --> 
-	4  / (exitcond)
-	6  / (!exitcond)
-6 --> 
-	7  / true
-7 --> 
-	8  / true
-8 --> 
-	9  / true
-9 --> 
-	10  / true
-10 --> 
-	11  / true
-11 --> 
-	12  / true
-12 --> 
 	5  / true
+5 --> 
+	2  / true
+6 --> 
 * FSM state operations: 
 
  <State 1>: 1.57ns
-ST_1: line_delays_rp_V [1/1] 0.00ns
-:0  %line_delays_rp_V = alloca i10
+ST_1: tmp_V [1/1] 0.00ns
+:0  %tmp_V = alloca i17
 
-ST_1: line_delays_rp_V_1 [1/1] 0.00ns
-:1  %line_delays_rp_V_1 = alloca i10
+ST_1: stg_8 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i256* %out_V_data_V), !map !159
 
-ST_1: line_delays_rp_V_2 [1/1] 0.00ns
-:2  %line_delays_rp_V_2 = alloca i10
+ST_1: stg_9 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i24* %in_V_V), !map !235
 
-ST_1: line_delays_wp_V [1/1] 0.00ns
-:3  %line_delays_wp_V = alloca i10
+ST_1: stg_10 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @dog_str) nounwind
 
-ST_1: line_delays_wp_V_1 [1/1] 0.00ns
-:4  %line_delays_wp_V_1 = alloca i10
+ST_1: buffer_0_V [1/1] 0.00ns
+:4  %buffer_0_V = alloca [1024 x i17], align 4
 
-ST_1: line_delays_wp_V_2 [1/1] 0.00ns
-:5  %line_delays_wp_V_2 = alloca i10
+ST_1: buffer_1_V [1/1] 0.00ns
+:5  %buffer_1_V = alloca [1024 x i17], align 4
 
-ST_1: stg_19 [1/1] 0.00ns
-:6  call void (...)* @_ssdm_op_SpecBitsMap(i24* %out_data_V), !map !85
+ST_1: buffer_2_V [1/1] 0.00ns
+:6  %buffer_2_V = alloca [1024 x i17], align 4
 
-ST_1: stg_20 [1/1] 0.00ns
-:7  call void (...)* @_ssdm_op_SpecBitsMap(i8 %in_V), !map !101
+ST_1: buffer_3_V [1/1] 0.00ns
+:7  %buffer_3_V = alloca [1024 x i17], align 4
 
-ST_1: stg_21 [1/1] 0.00ns
-:8  call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @dog_str) nounwind
+ST_1: buffer_4_V [1/1] 0.00ns
+:8  %buffer_4_V = alloca [1024 x i17], align 4
 
-ST_1: in_V_read [1/1] 0.00ns
-:9  %in_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %in_V)
+ST_1: buffer_5_V [1/1] 0.00ns
+:9  %buffer_5_V = alloca [1024 x i17], align 4
 
-ST_1: line_delays_buffer_V [1/1] 0.00ns
-:10  %line_delays_buffer_V = alloca [3072 x i8], align 1
+ST_1: buffer_6_V [1/1] 0.00ns
+:10  %buffer_6_V = alloca [1024 x i17], align 4
 
-ST_1: line_delay_outs_V [1/1] 0.00ns
-:11  %line_delay_outs_V = alloca [3 x i8], align 1
+ST_1: buffer_7_V [1/1] 0.00ns
+:11  %buffer_7_V = alloca [1024 x i17], align 4
+
+ST_1: buffer_8_V [1/1] 0.00ns
+:12  %buffer_8_V = alloca [1024 x i17], align 4
+
+ST_1: buffer_9_V [1/1] 0.00ns
+:13  %buffer_9_V = alloca [1024 x i17], align 4
+
+ST_1: buffer_10_V [1/1] 0.00ns
+:14  %buffer_10_V = alloca [1024 x i17], align 4
+
+ST_1: buffer_11_V [1/1] 0.00ns
+:15  %buffer_11_V = alloca [1024 x i17], align 4
+
+ST_1: buffer_12_V [1/1] 0.00ns
+:16  %buffer_12_V = alloca [1024 x i17], align 4
+
+ST_1: buffer_13_V [1/1] 0.00ns
+:17  %buffer_13_V = alloca [1024 x i17], align 4
 
 ST_1: stg_25 [1/1] 0.00ns
-:12  call void (...)* @_ssdm_op_SpecMemCore([3072 x i8]* %line_delays_buffer_V, [1 x i8]* @p_str2072, [12 x i8]* @p_str2074, [1 x i8]* @p_str2072, i32 -1, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072, [1 x i8]* @p_str2072)
+:18  call void (...)* @_ssdm_op_SpecInterface(i24* %in_V_V, [5 x i8]* @p_str2072, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2073, [1 x i8]* @p_str2073, [1 x i8]* @p_str2073, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2073)
 
-ST_1: stg_26 [1/1] 1.57ns
-:13  br label %arrayctor.loop.i.i
+ST_1: stg_26 [1/1] 0.00ns
+:19  call void (...)* @_ssdm_op_SpecInterface(i256* %out_V_data_V, [5 x i8]* @p_str2072, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2073, [1 x i8]* @p_str2073, [1 x i8]* @p_str2073, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2073)
 
-
- <State 2>: 1.58ns
-ST_2: tmp [1/1] 0.00ns
-arrayctor.loop.i.i:0  %tmp = phi i2 [ 0, %0 ], [ %tmp_9, %arrayctor.loop.i.i5_ifconv ]
-
-ST_2: tmp_9 [1/1] 0.85ns
-arrayctor.loop.i.i:1  %tmp_9 = add i2 %tmp, 1
-
-ST_2: stg_29 [1/1] 1.58ns
-arrayctor.loop.i.i:2  switch i2 %tmp, label %branch2 [
-    i2 0, label %arrayctor.loop.i.i5_ifconv.pre
-    i2 1, label %branch1
-  ]
-
-ST_2: stg_30 [1/1] 0.00ns
-branch1:0  store i10 0, i10* %line_delays_wp_V_1
-
-ST_2: stg_31 [1/1] 0.00ns
-branch1:1  br label %arrayctor.loop.i.i5_ifconv
-
-ST_2: stg_32 [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv.pre:0  store i10 0, i10* %line_delays_wp_V
-
-ST_2: stg_33 [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv.pre:1  br label %arrayctor.loop.i.i5_ifconv
-
-ST_2: stg_34 [1/1] 0.00ns
-branch2:0  store i10 0, i10* %line_delays_wp_V_2
-
-ST_2: stg_35 [1/1] 0.00ns
-branch2:1  br label %arrayctor.loop.i.i5_ifconv
+ST_1: stg_27 [1/1] 1.57ns
+:20  br label %1
 
 
- <State 3>: 4.16ns
-ST_3: line_delays_rp_V_load [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:0  %line_delays_rp_V_load = load i10* %line_delays_rp_V
+ <State 2>: 3.97ns
+ST_2: indvar_flatten [1/1] 0.00ns
+:0  %indvar_flatten = phi i19 [ 0, %0 ], [ %indvar_flatten_next, %._crit_edge ]
 
-ST_3: line_delays_rp_V_1_load [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:1  %line_delays_rp_V_1_load = load i10* %line_delays_rp_V_1
+ST_2: indvars_iv [1/1] 0.00ns
+:1  %indvars_iv = phi i10 [ -384, %0 ], [ %indvars_iv_mid2, %._crit_edge ]
 
-ST_3: line_delays_rp_V_2_load [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:2  %line_delays_rp_V_2_load = load i10* %line_delays_rp_V_2
+ST_2: p_s [1/1] 0.00ns
+:2  %p_s = phi i10 [ 0, %0 ], [ %p_mid2, %._crit_edge ]
 
-ST_3: line_delays_wp_V_load [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:3  %line_delays_wp_V_load = load i10* %line_delays_wp_V
+ST_2: p_1 [1/1] 0.00ns
+:3  %p_1 = phi i10 [ 384, %0 ], [ %p_1_mid2, %._crit_edge ]
 
-ST_3: line_delays_wp_V_1_load [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:4  %line_delays_wp_V_1_load = load i10* %line_delays_wp_V_1
+ST_2: p_2 [1/1] 0.00ns
+:4  %p_2 = phi i9 [ 0, %0 ], [ %p_2_mid2, %._crit_edge ]
 
-ST_3: line_delays_wp_V_2_load [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:5  %line_delays_wp_V_2_load = load i10* %line_delays_wp_V_2
+ST_2: p_0178_1 [1/1] 0.00ns
+:5  %p_0178_1 = phi i10 [ 0, %0 ], [ %tmp_7, %._crit_edge ]
 
-ST_3: sel_tmp [1/1] 1.22ns
-arrayctor.loop.i.i5_ifconv:6  %sel_tmp = icmp eq i2 %tmp, 1
+ST_2: p_0279_1 [1/1] 0.00ns
+:6  %p_0279_1 = phi i10 [ 384, %0 ], [ %tmp_8, %._crit_edge ]
 
-ST_3: sel_tmp1 [1/1] 0.00ns (grouped into LUT with out node line_delays_rp_V_2_1)
-arrayctor.loop.i.i5_ifconv:7  %sel_tmp1 = select i1 %sel_tmp, i10 %line_delays_rp_V_2_load, i10 -8
+ST_2: exitcond_flatten [1/1] 2.27ns
+:7  %exitcond_flatten = icmp eq i19 %indvar_flatten, -212608
 
-ST_3: sel_tmp2 [1/1] 1.22ns
-arrayctor.loop.i.i5_ifconv:8  %sel_tmp2 = icmp eq i2 %tmp, 0
+ST_2: indvar_flatten_next [1/1] 2.13ns
+:8  %indvar_flatten_next = add i19 %indvar_flatten, 1
 
-ST_3: line_delays_rp_V_2_1 [1/1] 1.37ns (out node of the LUT)
-arrayctor.loop.i.i5_ifconv:9  %line_delays_rp_V_2_1 = select i1 %sel_tmp2, i10 %line_delays_rp_V_2_load, i10 %sel_tmp1
+ST_2: stg_37 [1/1] 0.00ns
+:9  br i1 %exitcond_flatten, label %3, label %.reset
 
-ST_3: sel_tmp5 [1/1] 0.00ns (grouped into LUT with out node line_delays_rp_V_1_1)
-arrayctor.loop.i.i5_ifconv:10  %sel_tmp5 = select i1 %sel_tmp, i10 -8, i10 %line_delays_rp_V_1_load
+ST_2: exitcond [1/1] 2.10ns
+.reset:1  %exitcond = icmp eq i10 %p_0178_1, %indvars_iv
 
-ST_3: line_delays_rp_V_1_1 [1/1] 1.37ns (out node of the LUT)
-arrayctor.loop.i.i5_ifconv:11  %line_delays_rp_V_1_1 = select i1 %sel_tmp2, i10 %line_delays_rp_V_1_load, i10 %sel_tmp5
+ST_2: wp_V [1/1] 1.89ns
+.reset:2  %wp_V = add i10 %p_s, -384
 
-ST_3: line_delays_rp_V_0_1 [1/1] 1.37ns
-arrayctor.loop.i.i5_ifconv:12  %line_delays_rp_V_0_1 = select i1 %sel_tmp2, i10 -8, i10 %line_delays_rp_V_load
+ST_2: p_0178_1_mid2 [1/1] 1.37ns
+.reset:3  %p_0178_1_mid2 = select i1 %exitcond, i10 %wp_V, i10 %p_0178_1
 
-ST_3: tmp_1 [1/1] 1.22ns
-arrayctor.loop.i.i5_ifconv:13  %tmp_1 = icmp eq i2 %tmp, -2
+ST_2: rp_V [1/1] 1.89ns
+.reset:4  %rp_V = add i10 %p_1, -384
 
-ST_3: empty [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:14  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)
+ST_2: p_0279_1_mid2 [1/1] 1.37ns
+.reset:5  %p_0279_1_mid2 = select i1 %exitcond, i10 %rp_V, i10 %p_0279_1
 
-ST_3: stg_51 [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:15  store i10 %line_delays_rp_V_2_1, i10* %line_delays_rp_V_2
+ST_2: i_V [1/1] 1.89ns
+.reset:6  %i_V = add i9 %p_2, 1
 
-ST_3: stg_52 [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:16  store i10 %line_delays_rp_V_1_1, i10* %line_delays_rp_V_1
+ST_2: tmp_mid1 [1/1] 2.08ns
+.reset:7  %tmp_mid1 = icmp ult i9 %i_V, -32
 
-ST_3: stg_53 [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:17  store i10 %line_delays_rp_V_0_1, i10* %line_delays_rp_V
+ST_2: tmp [1/1] 2.08ns
+.reset:8  %tmp = icmp ult i9 %p_2, -32
+
+ST_2: indvars_iv_next_dup2 [1/1] 1.89ns
+.reset:10  %indvars_iv_next_dup2 = add i10 %indvars_iv, -384
+
+ST_2: indvars_iv_mid2 [1/1] 1.37ns
+.reset:11  %indvars_iv_mid2 = select i1 %exitcond, i10 %indvars_iv_next_dup2, i10 %indvars_iv
+
+ST_2: p_mid2 [1/1] 1.37ns
+.reset:12  %p_mid2 = select i1 %exitcond, i10 %wp_V, i10 %p_s
+
+ST_2: p_1_mid2 [1/1] 1.37ns
+.reset:13  %p_1_mid2 = select i1 %exitcond, i10 %rp_V, i10 %p_1
+
+ST_2: p_2_mid2 [1/1] 1.37ns
+.reset:14  %p_2_mid2 = select i1 %exitcond, i9 %i_V, i9 %p_2
+
+
+ <State 3>: 2.71ns
+ST_3: empty_17 [1/1] 0.00ns
+.reset:0  %empty_17 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 311680, i64 311680, i64 311680)
+
+ST_3: tmp_mid2 [1/1] 1.37ns
+.reset:9  %tmp_mid2 = select i1 %exitcond, i1 %tmp_mid1, i1 %tmp
+
+ST_3: tmp_2 [1/1] 0.00ns
+.reset:15  %tmp_2 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2075)
 
 ST_3: stg_54 [1/1] 0.00ns
-arrayctor.loop.i.i5_ifconv:18  br i1 %tmp_1, label %line_buffer.exit.preheader, label %arrayctor.loop.i.i
+.reset:16  call void (...)* @_ssdm_op_SpecPipeline(i32 10, i32 1, i32 1, i32 0, [1 x i8]* @p_str2073) nounwind
 
-ST_3: line_delays_0_wp_V_1 [1/1] 0.00ns
-line_buffer.exit.preheader:0  %line_delays_0_wp_V_1 = alloca i10
+ST_3: stg_55 [1/1] 0.00ns
+.reset:17  br i1 %tmp_mid2, label %2, label %._crit_edge
 
-ST_3: line_delays_1_wp_V_1 [1/1] 0.00ns
-line_buffer.exit.preheader:1  %line_delays_1_wp_V_1 = alloca i10
+ST_3: tmp_5 [1/1] 0.00ns
+._crit_edge:4  %tmp_5 = zext i10 %p_0279_1_mid2 to i64
 
-ST_3: line_delays_2_wp_V_1 [1/1] 0.00ns
-line_buffer.exit.preheader:2  %line_delays_2_wp_V_1 = alloca i10
+ST_3: buffer_0_V_addr_1 [1/1] 0.00ns
+._crit_edge:5  %buffer_0_V_addr_1 = getelementptr [1024 x i17]* %buffer_0_V, i64 0, i64 %tmp_5
 
-ST_3: line_delays_0_rp_V_1 [1/1] 0.00ns
-line_buffer.exit.preheader:3  %line_delays_0_rp_V_1 = alloca i10
+ST_3: buffer_0_V_load [2/2] 2.71ns
+._crit_edge:6  %buffer_0_V_load = load i17* %buffer_0_V_addr_1, align 4
 
-ST_3: line_delays_1_rp_V_1 [1/1] 0.00ns
-line_buffer.exit.preheader:4  %line_delays_1_rp_V_1 = alloca i10
+ST_3: buffer_1_V_addr_1 [1/1] 0.00ns
+._crit_edge:10  %buffer_1_V_addr_1 = getelementptr [1024 x i17]* %buffer_1_V, i64 0, i64 %tmp_5
 
-ST_3: line_delays_2_rp_V_1 [1/1] 0.00ns
-line_buffer.exit.preheader:5  %line_delays_2_rp_V_1 = alloca i10
+ST_3: buffer_1_V_load [2/2] 2.71ns
+._crit_edge:11  %buffer_1_V_load = load i17* %buffer_1_V_addr_1, align 4
 
-ST_3: stg_61 [1/1] 1.57ns
-line_buffer.exit.preheader:6  store i10 %line_delays_rp_V_2_1, i10* %line_delays_2_rp_V_1
+ST_3: buffer_2_V_addr_1 [1/1] 0.00ns
+._crit_edge:16  %buffer_2_V_addr_1 = getelementptr [1024 x i17]* %buffer_2_V, i64 0, i64 %tmp_5
 
-ST_3: stg_62 [1/1] 1.57ns
-line_buffer.exit.preheader:7  store i10 %line_delays_rp_V_1_1, i10* %line_delays_1_rp_V_1
+ST_3: buffer_2_V_load [2/2] 2.71ns
+._crit_edge:17  %buffer_2_V_load = load i17* %buffer_2_V_addr_1, align 4
 
-ST_3: stg_63 [1/1] 1.57ns
-line_buffer.exit.preheader:8  store i10 %line_delays_rp_V_0_1, i10* %line_delays_0_rp_V_1
+ST_3: buffer_3_V_addr_1 [1/1] 0.00ns
+._crit_edge:22  %buffer_3_V_addr_1 = getelementptr [1024 x i17]* %buffer_3_V, i64 0, i64 %tmp_5
 
-ST_3: stg_64 [1/1] 1.57ns
-line_buffer.exit.preheader:9  store i10 %line_delays_wp_V_2_load, i10* %line_delays_2_wp_V_1
+ST_3: buffer_3_V_load [2/2] 2.71ns
+._crit_edge:23  %buffer_3_V_load = load i17* %buffer_3_V_addr_1, align 4
 
-ST_3: stg_65 [1/1] 1.57ns
-line_buffer.exit.preheader:10  store i10 %line_delays_wp_V_1_load, i10* %line_delays_1_wp_V_1
+ST_3: buffer_4_V_addr_1 [1/1] 0.00ns
+._crit_edge:28  %buffer_4_V_addr_1 = getelementptr [1024 x i17]* %buffer_4_V, i64 0, i64 %tmp_5
 
-ST_3: stg_66 [1/1] 1.57ns
-line_buffer.exit.preheader:11  store i10 %line_delays_wp_V_load, i10* %line_delays_0_wp_V_1
+ST_3: buffer_4_V_load [2/2] 2.71ns
+._crit_edge:29  %buffer_4_V_load = load i17* %buffer_4_V_addr_1, align 4
 
-ST_3: stg_67 [1/1] 1.57ns
-line_buffer.exit.preheader:12  br label %line_buffer.exit
+ST_3: buffer_5_V_addr_1 [1/1] 0.00ns
+._crit_edge:34  %buffer_5_V_addr_1 = getelementptr [1024 x i17]* %buffer_5_V, i64 0, i64 %tmp_5
+
+ST_3: buffer_5_V_load [2/2] 2.71ns
+._crit_edge:35  %buffer_5_V_load = load i17* %buffer_5_V_addr_1, align 4
+
+ST_3: buffer_6_V_addr_1 [1/1] 0.00ns
+._crit_edge:40  %buffer_6_V_addr_1 = getelementptr [1024 x i17]* %buffer_6_V, i64 0, i64 %tmp_5
+
+ST_3: buffer_6_V_load [2/2] 2.71ns
+._crit_edge:41  %buffer_6_V_load = load i17* %buffer_6_V_addr_1, align 4
+
+ST_3: buffer_7_V_addr_1 [1/1] 0.00ns
+._crit_edge:46  %buffer_7_V_addr_1 = getelementptr [1024 x i17]* %buffer_7_V, i64 0, i64 %tmp_5
+
+ST_3: p_Val2_s [2/2] 2.71ns
+._crit_edge:47  %p_Val2_s = load i17* %buffer_7_V_addr_1, align 4
+
+ST_3: buffer_8_V_addr_1 [1/1] 0.00ns
+._crit_edge:52  %buffer_8_V_addr_1 = getelementptr [1024 x i17]* %buffer_8_V, i64 0, i64 %tmp_5
+
+ST_3: buffer_8_V_load [2/2] 2.71ns
+._crit_edge:53  %buffer_8_V_load = load i17* %buffer_8_V_addr_1, align 4
+
+ST_3: buffer_9_V_addr_1 [1/1] 0.00ns
+._crit_edge:58  %buffer_9_V_addr_1 = getelementptr [1024 x i17]* %buffer_9_V, i64 0, i64 %tmp_5
+
+ST_3: buffer_9_V_load [2/2] 2.71ns
+._crit_edge:59  %buffer_9_V_load = load i17* %buffer_9_V_addr_1, align 4
+
+ST_3: buffer_10_V_addr_1 [1/1] 0.00ns
+._crit_edge:64  %buffer_10_V_addr_1 = getelementptr [1024 x i17]* %buffer_10_V, i64 0, i64 %tmp_5
+
+ST_3: buffer_10_V_load [2/2] 2.71ns
+._crit_edge:65  %buffer_10_V_load = load i17* %buffer_10_V_addr_1, align 4
+
+ST_3: buffer_11_V_addr_1 [1/1] 0.00ns
+._crit_edge:70  %buffer_11_V_addr_1 = getelementptr [1024 x i17]* %buffer_11_V, i64 0, i64 %tmp_5
+
+ST_3: buffer_11_V_load [2/2] 2.71ns
+._crit_edge:71  %buffer_11_V_load = load i17* %buffer_11_V_addr_1, align 4
+
+ST_3: buffer_12_V_addr_1 [1/1] 0.00ns
+._crit_edge:76  %buffer_12_V_addr_1 = getelementptr [1024 x i17]* %buffer_12_V, i64 0, i64 %tmp_5
+
+ST_3: buffer_12_V_load [2/2] 2.71ns
+._crit_edge:77  %buffer_12_V_load = load i17* %buffer_12_V_addr_1, align 4
+
+ST_3: tmp_8 [1/1] 1.89ns
+._crit_edge:86  %tmp_8 = add i10 %p_0279_1_mid2, 1
 
 
- <State 4>: 3.51ns
-ST_4: p_s [1/1] 0.00ns
-line_buffer.exit:0  %p_s = phi i4 [ 0, %line_buffer.exit.preheader ], [ %i_V, %.preheader ]
+ <State 4>: 2.71ns
+ST_4: in_V_V_read [1/1] 0.00ns
+:0  %in_V_V_read = call i24 @_ssdm_op_Read.axis.volatile.i24P(i24* %in_V_V)
 
-ST_4: exitcond1 [1/1] 1.94ns
-line_buffer.exit:1  %exitcond1 = icmp eq i4 %p_s, -7
+ST_4: tmp_V_1 [1/1] 0.00ns
+:1  %tmp_V_1 = trunc i24 %in_V_V_read to i17
 
-ST_4: empty_4 [1/1] 0.00ns
-line_buffer.exit:2  %empty_4 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 9, i64 9, i64 9)
+ST_4: stg_86 [1/1] 0.00ns
+:2  store i17 %tmp_V_1, i17* %tmp_V
 
-ST_4: i_V [1/1] 0.85ns
-line_buffer.exit:3  %i_V = add i4 %p_s, 1
+ST_4: stg_87 [1/1] 0.00ns
+:3  br label %._crit_edge
 
-ST_4: stg_72 [1/1] 1.57ns
-line_buffer.exit:4  br i1 %exitcond1, label %2, label %.preheader
+ST_4: buffer_0_V_load [1/2] 2.71ns
+._crit_edge:6  %buffer_0_V_load = load i17* %buffer_0_V_addr_1, align 4
 
-ST_4: stg_73 [1/1] 0.00ns
-:0  ret void
+ST_4: buffer_1_V_load [1/2] 2.71ns
+._crit_edge:11  %buffer_1_V_load = load i17* %buffer_1_V_addr_1, align 4
+
+ST_4: buffer_2_V_load [1/2] 2.71ns
+._crit_edge:17  %buffer_2_V_load = load i17* %buffer_2_V_addr_1, align 4
+
+ST_4: buffer_3_V_load [1/2] 2.71ns
+._crit_edge:23  %buffer_3_V_load = load i17* %buffer_3_V_addr_1, align 4
+
+ST_4: buffer_4_V_load [1/2] 2.71ns
+._crit_edge:29  %buffer_4_V_load = load i17* %buffer_4_V_addr_1, align 4
+
+ST_4: buffer_5_V_load [1/2] 2.71ns
+._crit_edge:35  %buffer_5_V_load = load i17* %buffer_5_V_addr_1, align 4
+
+ST_4: buffer_6_V_load [1/2] 2.71ns
+._crit_edge:41  %buffer_6_V_load = load i17* %buffer_6_V_addr_1, align 4
+
+ST_4: p_Val2_s [1/2] 2.71ns
+._crit_edge:47  %p_Val2_s = load i17* %buffer_7_V_addr_1, align 4
+
+ST_4: buffer_8_V_load [1/2] 2.71ns
+._crit_edge:53  %buffer_8_V_load = load i17* %buffer_8_V_addr_1, align 4
+
+ST_4: buffer_9_V_load [1/2] 2.71ns
+._crit_edge:59  %buffer_9_V_load = load i17* %buffer_9_V_addr_1, align 4
+
+ST_4: buffer_10_V_load [1/2] 2.71ns
+._crit_edge:65  %buffer_10_V_load = load i17* %buffer_10_V_addr_1, align 4
+
+ST_4: buffer_11_V_load [1/2] 2.71ns
+._crit_edge:71  %buffer_11_V_load = load i17* %buffer_11_V_addr_1, align 4
+
+ST_4: buffer_12_V_load [1/2] 2.71ns
+._crit_edge:77  %buffer_12_V_load = load i17* %buffer_12_V_addr_1, align 4
 
 
- <State 5>: 1.94ns
-ST_5: p_1 [1/1] 0.00ns
-.preheader:0  %p_1 = phi i4 [ %j_V, %1 ], [ 0, %line_buffer.exit ]
+ <State 5>: 2.71ns
+ST_5: tmp_V_load [1/1] 0.00ns
+._crit_edge:0  %tmp_V_load = load i17* %tmp_V
 
-ST_5: exitcond [1/1] 1.94ns
-.preheader:1  %exitcond = icmp eq i4 %p_1, -8
+ST_5: tmp_4 [1/1] 0.00ns
+._crit_edge:1  %tmp_4 = zext i10 %p_0178_1_mid2 to i64
+
+ST_5: buffer_0_V_addr [1/1] 0.00ns
+._crit_edge:2  %buffer_0_V_addr = getelementptr [1024 x i17]* %buffer_0_V, i64 0, i64 %tmp_4
+
+ST_5: stg_104 [1/1] 2.71ns
+._crit_edge:3  store i17 %tmp_V_load, i17* %buffer_0_V_addr, align 4
+
+ST_5: tmp_3 [1/1] 0.00ns
+._crit_edge:7  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_1_V_addr [1/1] 0.00ns
+._crit_edge:8  %buffer_1_V_addr = getelementptr [1024 x i17]* %buffer_1_V, i64 0, i64 %tmp_4
+
+ST_5: stg_107 [1/1] 2.71ns
+._crit_edge:9  store i17 %buffer_0_V_load, i17* %buffer_1_V_addr, align 4
+
+ST_5: empty [1/1] 0.00ns
+._crit_edge:12  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_3)
+
+ST_5: tmp_6 [1/1] 0.00ns
+._crit_edge:13  %tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_2_V_addr [1/1] 0.00ns
+._crit_edge:14  %buffer_2_V_addr = getelementptr [1024 x i17]* %buffer_2_V, i64 0, i64 %tmp_4
+
+ST_5: stg_111 [1/1] 2.71ns
+._crit_edge:15  store i17 %buffer_1_V_load, i17* %buffer_2_V_addr, align 4
+
+ST_5: empty_3 [1/1] 0.00ns
+._crit_edge:18  %empty_3 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_6)
+
+ST_5: tmp_9 [1/1] 0.00ns
+._crit_edge:19  %tmp_9 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_3_V_addr [1/1] 0.00ns
+._crit_edge:20  %buffer_3_V_addr = getelementptr [1024 x i17]* %buffer_3_V, i64 0, i64 %tmp_4
+
+ST_5: stg_115 [1/1] 2.71ns
+._crit_edge:21  store i17 %buffer_2_V_load, i17* %buffer_3_V_addr, align 4
+
+ST_5: empty_4 [1/1] 0.00ns
+._crit_edge:24  %empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_9)
+
+ST_5: tmp_s [1/1] 0.00ns
+._crit_edge:25  %tmp_s = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_4_V_addr [1/1] 0.00ns
+._crit_edge:26  %buffer_4_V_addr = getelementptr [1024 x i17]* %buffer_4_V, i64 0, i64 %tmp_4
+
+ST_5: stg_119 [1/1] 2.71ns
+._crit_edge:27  store i17 %buffer_3_V_load, i17* %buffer_4_V_addr, align 4
 
 ST_5: empty_5 [1/1] 0.00ns
-.preheader:2  %empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8)
+._crit_edge:30  %empty_5 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_s)
 
-ST_5: j_V [1/1] 0.85ns
-.preheader:3  %j_V = add i4 %p_1, 1
+ST_5: tmp_1 [1/1] 0.00ns
+._crit_edge:31  %tmp_1 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
 
-ST_5: stg_78 [1/1] 0.00ns
-.preheader:4  br i1 %exitcond, label %line_buffer.exit, label %1
+ST_5: buffer_5_V_addr [1/1] 0.00ns
+._crit_edge:32  %buffer_5_V_addr = getelementptr [1024 x i17]* %buffer_5_V, i64 0, i64 %tmp_4
+
+ST_5: stg_123 [1/1] 2.71ns
+._crit_edge:33  store i17 %buffer_4_V_load, i17* %buffer_5_V_addr, align 4
+
+ST_5: empty_6 [1/1] 0.00ns
+._crit_edge:36  %empty_6 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_1)
+
+ST_5: tmp_10 [1/1] 0.00ns
+._crit_edge:37  %tmp_10 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_6_V_addr [1/1] 0.00ns
+._crit_edge:38  %buffer_6_V_addr = getelementptr [1024 x i17]* %buffer_6_V, i64 0, i64 %tmp_4
+
+ST_5: stg_127 [1/1] 2.71ns
+._crit_edge:39  store i17 %buffer_5_V_load, i17* %buffer_6_V_addr, align 4
+
+ST_5: empty_7 [1/1] 0.00ns
+._crit_edge:42  %empty_7 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_10)
+
+ST_5: tmp_11 [1/1] 0.00ns
+._crit_edge:43  %tmp_11 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_7_V_addr [1/1] 0.00ns
+._crit_edge:44  %buffer_7_V_addr = getelementptr [1024 x i17]* %buffer_7_V, i64 0, i64 %tmp_4
+
+ST_5: stg_131 [1/1] 2.71ns
+._crit_edge:45  store i17 %buffer_6_V_load, i17* %buffer_7_V_addr, align 4
+
+ST_5: empty_8 [1/1] 0.00ns
+._crit_edge:48  %empty_8 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_11)
+
+ST_5: tmp_12 [1/1] 0.00ns
+._crit_edge:49  %tmp_12 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_8_V_addr [1/1] 0.00ns
+._crit_edge:50  %buffer_8_V_addr = getelementptr [1024 x i17]* %buffer_8_V, i64 0, i64 %tmp_4
+
+ST_5: stg_135 [1/1] 2.71ns
+._crit_edge:51  store i17 %p_Val2_s, i17* %buffer_8_V_addr, align 4
+
+ST_5: empty_9 [1/1] 0.00ns
+._crit_edge:54  %empty_9 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_12)
+
+ST_5: tmp_13 [1/1] 0.00ns
+._crit_edge:55  %tmp_13 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_9_V_addr [1/1] 0.00ns
+._crit_edge:56  %buffer_9_V_addr = getelementptr [1024 x i17]* %buffer_9_V, i64 0, i64 %tmp_4
+
+ST_5: stg_139 [1/1] 2.71ns
+._crit_edge:57  store i17 %buffer_8_V_load, i17* %buffer_9_V_addr, align 4
+
+ST_5: empty_10 [1/1] 0.00ns
+._crit_edge:60  %empty_10 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_13)
+
+ST_5: tmp_14 [1/1] 0.00ns
+._crit_edge:61  %tmp_14 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_10_V_addr [1/1] 0.00ns
+._crit_edge:62  %buffer_10_V_addr = getelementptr [1024 x i17]* %buffer_10_V, i64 0, i64 %tmp_4
+
+ST_5: stg_143 [1/1] 2.71ns
+._crit_edge:63  store i17 %buffer_9_V_load, i17* %buffer_10_V_addr, align 4
+
+ST_5: empty_11 [1/1] 0.00ns
+._crit_edge:66  %empty_11 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_14)
+
+ST_5: tmp_15 [1/1] 0.00ns
+._crit_edge:67  %tmp_15 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_11_V_addr [1/1] 0.00ns
+._crit_edge:68  %buffer_11_V_addr = getelementptr [1024 x i17]* %buffer_11_V, i64 0, i64 %tmp_4
+
+ST_5: stg_147 [1/1] 2.71ns
+._crit_edge:69  store i17 %buffer_10_V_load, i17* %buffer_11_V_addr, align 4
+
+ST_5: empty_12 [1/1] 0.00ns
+._crit_edge:72  %empty_12 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_15)
+
+ST_5: tmp_16 [1/1] 0.00ns
+._crit_edge:73  %tmp_16 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_12_V_addr [1/1] 0.00ns
+._crit_edge:74  %buffer_12_V_addr = getelementptr [1024 x i17]* %buffer_12_V, i64 0, i64 %tmp_4
+
+ST_5: stg_151 [1/1] 2.71ns
+._crit_edge:75  store i17 %buffer_11_V_load, i17* %buffer_12_V_addr, align 4
+
+ST_5: empty_13 [1/1] 0.00ns
+._crit_edge:78  %empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_16)
+
+ST_5: tmp_17 [1/1] 0.00ns
+._crit_edge:79  %tmp_17 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: buffer_13_V_addr [1/1] 0.00ns
+._crit_edge:80  %buffer_13_V_addr = getelementptr [1024 x i17]* %buffer_13_V, i64 0, i64 %tmp_4
+
+ST_5: stg_155 [1/1] 2.71ns
+._crit_edge:81  store i17 %buffer_12_V_load, i17* %buffer_13_V_addr, align 4
+
+ST_5: empty_14 [1/1] 0.00ns
+._crit_edge:82  %empty_14 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_17)
+
+ST_5: tmp_18 [1/1] 0.00ns
+._crit_edge:83  %tmp_18 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str2076)
+
+ST_5: empty_15 [1/1] 0.00ns
+._crit_edge:84  %empty_15 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2076, i32 %tmp_18)
+
+ST_5: tmp_7 [1/1] 1.89ns
+._crit_edge:85  %tmp_7 = add i10 %p_0178_1_mid2, 1
+
+ST_5: empty_16 [1/1] 0.00ns
+._crit_edge:87  %empty_16 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str2075, i32 %tmp_2)
+
+ST_5: stg_161 [1/1] 0.00ns
+._crit_edge:88  br label %1
 
 
  <State 6>: 0.00ns
-ST_6: line_delays_0_wp_V_1_load [1/1] 0.00ns
-:0  %line_delays_0_wp_V_1_load = load i10* %line_delays_0_wp_V_1
-
-ST_6: line_delays_1_wp_V_1_load [1/1] 0.00ns
-:1  %line_delays_1_wp_V_1_load = load i10* %line_delays_1_wp_V_1
-
-ST_6: line_delays_2_wp_V_1_load [1/1] 0.00ns
-:2  %line_delays_2_wp_V_1_load = load i10* %line_delays_2_wp_V_1
-
-ST_6: line_delays_0_rp_V_1_load [1/1] 0.00ns
-:3  %line_delays_0_rp_V_1_load = load i10* %line_delays_0_rp_V_1
-
-ST_6: line_delays_1_rp_V_1_load [1/1] 0.00ns
-:4  %line_delays_1_rp_V_1_load = load i10* %line_delays_1_rp_V_1
-
-ST_6: line_delays_2_rp_V_1_load [1/1] 0.00ns
-:5  %line_delays_2_rp_V_1_load = load i10* %line_delays_2_rp_V_1
-
-ST_6: call_ret1 [7/7] 0.00ns
-:6  %call_ret1 = call fastcc { i10, i10, i10, i10, i10, i10, i24 } @dog_func(i10 %line_delays_0_wp_V_1_load, i10 %line_delays_1_wp_V_1_load, i10 %line_delays_2_wp_V_1_load, i10 %line_delays_0_rp_V_1_load, i10 %line_delays_1_rp_V_1_load, i10 %line_delays_2_rp_V_1_load, [3072 x i8]* %line_delays_buffer_V, [3 x i8]* %line_delay_outs_V, i8 %in_V_read)
-
-
- <State 7>: 5.10ns
-ST_7: call_ret1 [6/7] 5.10ns
-:6  %call_ret1 = call fastcc { i10, i10, i10, i10, i10, i10, i24 } @dog_func(i10 %line_delays_0_wp_V_1_load, i10 %line_delays_1_wp_V_1_load, i10 %line_delays_2_wp_V_1_load, i10 %line_delays_0_rp_V_1_load, i10 %line_delays_1_rp_V_1_load, i10 %line_delays_2_rp_V_1_load, [3072 x i8]* %line_delays_buffer_V, [3 x i8]* %line_delay_outs_V, i8 %in_V_read)
-
-
- <State 8>: 5.10ns
-ST_8: call_ret1 [5/7] 5.10ns
-:6  %call_ret1 = call fastcc { i10, i10, i10, i10, i10, i10, i24 } @dog_func(i10 %line_delays_0_wp_V_1_load, i10 %line_delays_1_wp_V_1_load, i10 %line_delays_2_wp_V_1_load, i10 %line_delays_0_rp_V_1_load, i10 %line_delays_1_rp_V_1_load, i10 %line_delays_2_rp_V_1_load, [3072 x i8]* %line_delays_buffer_V, [3 x i8]* %line_delay_outs_V, i8 %in_V_read)
-
-
- <State 9>: 5.10ns
-ST_9: call_ret1 [4/7] 5.10ns
-:6  %call_ret1 = call fastcc { i10, i10, i10, i10, i10, i10, i24 } @dog_func(i10 %line_delays_0_wp_V_1_load, i10 %line_delays_1_wp_V_1_load, i10 %line_delays_2_wp_V_1_load, i10 %line_delays_0_rp_V_1_load, i10 %line_delays_1_rp_V_1_load, i10 %line_delays_2_rp_V_1_load, [3072 x i8]* %line_delays_buffer_V, [3 x i8]* %line_delay_outs_V, i8 %in_V_read)
-
-
- <State 10>: 5.10ns
-ST_10: call_ret1 [3/7] 5.10ns
-:6  %call_ret1 = call fastcc { i10, i10, i10, i10, i10, i10, i24 } @dog_func(i10 %line_delays_0_wp_V_1_load, i10 %line_delays_1_wp_V_1_load, i10 %line_delays_2_wp_V_1_load, i10 %line_delays_0_rp_V_1_load, i10 %line_delays_1_rp_V_1_load, i10 %line_delays_2_rp_V_1_load, [3072 x i8]* %line_delays_buffer_V, [3 x i8]* %line_delay_outs_V, i8 %in_V_read)
-
-
- <State 11>: 5.10ns
-ST_11: call_ret1 [2/7] 5.10ns
-:6  %call_ret1 = call fastcc { i10, i10, i10, i10, i10, i10, i24 } @dog_func(i10 %line_delays_0_wp_V_1_load, i10 %line_delays_1_wp_V_1_load, i10 %line_delays_2_wp_V_1_load, i10 %line_delays_0_rp_V_1_load, i10 %line_delays_1_rp_V_1_load, i10 %line_delays_2_rp_V_1_load, [3072 x i8]* %line_delays_buffer_V, [3 x i8]* %line_delay_outs_V, i8 %in_V_read)
-
-
- <State 12>: 4.28ns
-ST_12: call_ret1 [1/7] 2.71ns
-:6  %call_ret1 = call fastcc { i10, i10, i10, i10, i10, i10, i24 } @dog_func(i10 %line_delays_0_wp_V_1_load, i10 %line_delays_1_wp_V_1_load, i10 %line_delays_2_wp_V_1_load, i10 %line_delays_0_rp_V_1_load, i10 %line_delays_1_rp_V_1_load, i10 %line_delays_2_rp_V_1_load, [3072 x i8]* %line_delays_buffer_V, [3 x i8]* %line_delay_outs_V, i8 %in_V_read)
-
-ST_12: line_delays_2_rp_V [1/1] 0.00ns
-:7  %line_delays_2_rp_V = extractvalue { i10, i10, i10, i10, i10, i10, i24 } %call_ret1, 5
-
-ST_12: line_delays_1_rp_V [1/1] 0.00ns
-:8  %line_delays_1_rp_V = extractvalue { i10, i10, i10, i10, i10, i10, i24 } %call_ret1, 4
-
-ST_12: line_delays_0_rp_V [1/1] 0.00ns
-:9  %line_delays_0_rp_V = extractvalue { i10, i10, i10, i10, i10, i10, i24 } %call_ret1, 3
-
-ST_12: line_delays_2_wp_V [1/1] 0.00ns
-:10  %line_delays_2_wp_V = extractvalue { i10, i10, i10, i10, i10, i10, i24 } %call_ret1, 2
-
-ST_12: line_delays_1_wp_V [1/1] 0.00ns
-:11  %line_delays_1_wp_V = extractvalue { i10, i10, i10, i10, i10, i10, i24 } %call_ret1, 1
-
-ST_12: line_delays_0_wp_V [1/1] 0.00ns
-:12  %line_delays_0_wp_V = extractvalue { i10, i10, i10, i10, i10, i10, i24 } %call_ret1, 0
-
-ST_12: out_data_V_ret [1/1] 0.00ns
-:13  %out_data_V_ret = extractvalue { i10, i10, i10, i10, i10, i10, i24 } %call_ret1, 6
-
-ST_12: stg_99 [1/1] 0.00ns
-:14  call void @_ssdm_op_Write.ap_auto.i24P(i24* %out_data_V, i24 %out_data_V_ret)
-
-ST_12: stg_100 [1/1] 1.57ns
-:15  store i10 %line_delays_2_rp_V, i10* %line_delays_2_rp_V_1
-
-ST_12: stg_101 [1/1] 1.57ns
-:16  store i10 %line_delays_1_rp_V, i10* %line_delays_1_rp_V_1
-
-ST_12: stg_102 [1/1] 1.57ns
-:17  store i10 %line_delays_0_rp_V, i10* %line_delays_0_rp_V_1
-
-ST_12: stg_103 [1/1] 1.57ns
-:18  store i10 %line_delays_2_wp_V, i10* %line_delays_2_wp_V_1
-
-ST_12: stg_104 [1/1] 1.57ns
-:19  store i10 %line_delays_1_wp_V, i10* %line_delays_1_wp_V_1
-
-ST_12: stg_105 [1/1] 1.57ns
-:20  store i10 %line_delays_0_wp_V, i10* %line_delays_0_wp_V_1
-
-ST_12: stg_106 [1/1] 0.00ns
-:21  br label %.preheader
+ST_6: stg_162 [1/1] 0.00ns
+:0  ret void
 
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 8ns, clock uncertainty: 1ns.
+Target clock period: 5ns, clock uncertainty: 0.625ns.
 
  No timing violations. 
 
@@ -437,12 +596,6 @@ N/A
 	State 4
 	State 5
 	State 6
-	State 7
-	State 8
-	State 9
-	State 10
-	State 11
-	State 12
 
 
 ============================================================

@@ -1,7 +1,13 @@
 set C_TypeInfoList {{ 
-"dog" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"in": [[],"0"] }, {"out": [[], {"reference": "1"}] }],[],""], 
-"1": [ "line_out", {"struct": [[],[],[{ "data": [[],  {"array": ["0", [3]]}]}],""]}], 
-"0": [ "ap_uint<8>", {"hls_type": {"ap_uint": [[[[], {"scalar": { "int": 8}}]],""]}}]
+"dog" : [[], { "return": [[], "void"]} , [{"ExternC" : 0}], [ {"in": [[], {"reference": "0"}] }, {"out": [[], {"reference": "1"}] }],[],""], 
+"0": [ "stream<ap_ufixed<17, 8, 5, 3, 0> >", {"hls_type": {"stream": [[[[],"2"]],"3"]}}], 
+"2": [ "ap_ufixed<17, 8, 5, 3, 0>", {"hls_type": {"ap_ufixed": [[[[], {"scalar": { "int": 17}}],[[], {"scalar": { "int": 8}}],[[], {"scalar": { "4": 5}}],[[], {"scalar": { "5": 3}}],[[], {"scalar": { "int": 0}}]],""]}}], 
+"1": [ "stream<line_out>", {"hls_type": {"stream": [[[[],"6"]],"3"]}}], 
+"6": [ "line_out", {"struct": [[],[],[{ "data": [[],  {"array": ["7", [15]]}]}],""]}], 
+"7": [ "dog_in", {"typedef": [[[],"2"],""]}], 
+"4": [ "ap_q_mode", {"enum": [[],[],[{"SC_RND":  {"scalar": "__integer__"}},{"SC_RND_ZERO":  {"scalar": "__integer__"}},{"SC_RND_MIN_INF":  {"scalar": "__integer__"}},{"SC_RND_INF":  {"scalar": "__integer__"}},{"SC_RND_CONV":  {"scalar": "__integer__"}},{"SC_TRN":  {"scalar": "__integer__"}},{"SC_TRN_ZERO":  {"scalar": "__integer__"}}],""]}], 
+"5": [ "ap_o_mode", {"enum": [[],[],[{"SC_SAT":  {"scalar": "__integer__"}},{"SC_SAT_ZERO":  {"scalar": "__integer__"}},{"SC_SAT_SYM":  {"scalar": "__integer__"}},{"SC_WRAP":  {"scalar": "__integer__"}},{"SC_WRAP_SM":  {"scalar": "__integer__"}}],""]}],
+"3": ["hls", ""]
 }}
 set moduleName dog
 set isCombinational 0
@@ -13,81 +19,73 @@ set isOneStateSeq 0
 set C_modelName {dog}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ in_V int 8 regular  }
-	{ out_data_V int 24 regular {pointer 1}  }
+	{ in_V_V int 24 regular {axi_s 0 volatile  { in_V_V data } }  }
+	{ out_V_data_V int 256 unused {axi_s 0 ""  { out_V_data_V data } }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "in_V", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY", "bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "in.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "out_data_V", "interface" : "wire", "bitwidth" : 24, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "out.data.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 0,"up" : 0,"step" : 2}]}]},{"low":8,"up":15,"cElement": [{"cName": "out.data.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 1,"up" : 1,"step" : 2}]}]},{"low":16,"up":23,"cElement": [{"cName": "out.data.V","cData": "uint8","bit_use": { "low": 0,"up": 7},"cArray": [{"low" : 2,"up" : 2,"step" : 2}]}]}]} ]}
+	{ "Name" : "in_V_V", "interface" : "axis", "bitwidth" : 24, "direction" : "READONLY", "bitSlice":[{"low":0,"up":16,"cElement": [{"cName": "in.V.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
+ 	{ "Name" : "out_V_data_V", "interface" : "axis", "bitwidth" : 256, "direction" : "READONLY", "bitSlice":[{"low":0,"up":16,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 0,"up" : 0,"step" : 2}]}]},{"low":17,"up":33,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 1,"up" : 1,"step" : 2}]}]},{"low":34,"up":50,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 2,"up" : 2,"step" : 2}]}]},{"low":51,"up":67,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 3,"up" : 3,"step" : 2}]}]},{"low":68,"up":84,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 4,"up" : 4,"step" : 2}]}]},{"low":85,"up":101,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 5,"up" : 5,"step" : 2}]}]},{"low":102,"up":118,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 6,"up" : 6,"step" : 2}]}]},{"low":119,"up":135,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 7,"up" : 7,"step" : 2}]}]},{"low":136,"up":152,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 8,"up" : 8,"step" : 2}]}]},{"low":153,"up":169,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 9,"up" : 9,"step" : 2}]}]},{"low":170,"up":186,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 10,"up" : 10,"step" : 2}]}]},{"low":187,"up":203,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 11,"up" : 11,"step" : 2}]}]},{"low":204,"up":220,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 12,"up" : 12,"step" : 2}]}]},{"low":221,"up":237,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 13,"up" : 13,"step" : 2}]}]},{"low":238,"up":254,"cElement": [{"cName": "out.V.data.V","cData": "uint17","bit_use": { "low": 0,"up": 16},"cArray": [{"low" : 14,"up" : 14,"step" : 2}]}]}]} ]}
 # RTL Port declarations: 
-set portNum 9
+set portNum 12
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
-	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
+	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
 	{ ap_start sc_in sc_logic 1 start -1 } 
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ in_V sc_in sc_lv 8 signal 0 } 
-	{ out_data_V sc_out sc_lv 24 signal 1 } 
-	{ out_data_V_ap_vld sc_out sc_logic 1 outvld 1 } 
+	{ in_V_V_TDATA sc_in sc_lv 24 signal 0 } 
+	{ in_V_V_TVALID sc_in sc_logic 1 invld 0 } 
+	{ in_V_V_TREADY sc_out sc_logic 1 inacc 0 } 
+	{ out_V_data_V_TDATA sc_in sc_lv 256 signal 1 } 
+	{ out_V_data_V_TVALID sc_in sc_logic 1 invld 1 } 
+	{ out_V_data_V_TREADY sc_out sc_logic 1 inacc 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
- 	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
+ 	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
  	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "in_V", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "in_V", "role": "default" }} , 
- 	{ "name": "out_data_V", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "out_data_V", "role": "default" }} , 
- 	{ "name": "out_data_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "out_data_V", "role": "ap_vld" }}  ]}
+ 	{ "name": "in_V_V_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "in_V_V", "role": "TDATA" }} , 
+ 	{ "name": "in_V_V_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "in_V_V", "role": "TVALID" }} , 
+ 	{ "name": "in_V_V_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "in_V_V", "role": "TREADY" }} , 
+ 	{ "name": "out_V_data_V_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":256, "type": "signal", "bundle":{"name": "out_V_data_V", "role": "TDATA" }} , 
+ 	{ "name": "out_V_data_V_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "out_V_data_V", "role": "TVALID" }} , 
+ 	{ "name": "out_V_data_V_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "out_V_data_V", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"], "CDFG" : "dog", "VariableLatency" : "1", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "ProcessNetwork" : "0", "Combinational" : "0", "ControlExist" : "1",
+	{"Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"], "CDFG" : "dog", "VariableLatency" : "1", "AlignedPipeline" : "0", "UnalignedPipeline" : "0", "ProcessNetwork" : "0", "Combinational" : "0", "ControlExist" : "1",
 		"Port" : [
-		{"Name" : "in_V", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "out_data_V", "Type" : "Vld", "Direction" : "O", "BlockSignal" : [], "SubConnect" : []}],
+		{"Name" : "in_V_V", "Type" : "Axis", "Direction" : "I", "BlockSignal" : [
+			{"Name" : "in_V_V_TDATA_blk_n", "Type" : "RtlSignal"}], "SubConnect" : []}, 
+		{"Name" : "out_V_data_V", "Type" : "Axis", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}],
 		"WaitState" : [],
-		"SubBlockPort" : [
-		{"SubInst" : "grp_dog_func_fu_157", "BlockRtlPort" : ["in_V_blk_n"]}]},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_delays_buffer_V_U", "Parent" : "0", "Child" : []},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.line_delay_outs_V_U", "Parent" : "0", "Child" : []},
-	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_dog_func_fu_157", "Parent" : "0", "Child" : ["4"], "CDFG" : "dog_func", "VariableLatency" : "0", "AlignedPipeline" : "1", "UnalignedPipeline" : "0", "ProcessNetwork" : "0", "Combinational" : "0", "ControlExist" : "1",
-		"Port" : [
-		{"Name" : "line_buffer_delays_0_wp_V_read", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "line_buffer_delays_1_wp_V_read", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "line_buffer_delays_2_wp_V_read", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "line_buffer_delays_0_rp_V_read", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "line_buffer_delays_1_rp_V_read", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "line_buffer_delays_2_rp_V_read", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "line_buffer_delays_buffer_V", "Type" : "Memory", "Direction" : "IO", "BlockSignal" : [], "SubConnect" : [
-			{"SubInst" : "grp_dog_func_1_fu_142", "Port" : "delay_buffer_V"}]}, 
-		{"Name" : "line_buffer_delay_outs_V", "Type" : "Memory", "Direction" : "IO", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "in_V", "Type" : "Vld", "Direction" : "I", "BlockSignal" : [
-			{"Name" : "in_V_blk_n", "Type" : "RtlPort"}], "SubConnect" : []}],
-		"WaitState" : [],
-		"SubBlockPort" : [
-		{"SubInst" : "grp_dog_func_1_fu_142", "BlockRtlPort" : ["in_V_blk_n"]}]},
-	{"Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_dog_func_fu_157.grp_dog_func_1_fu_142", "Parent" : "3", "Child" : [], "CDFG" : "dog_func_1", "VariableLatency" : "0", "AlignedPipeline" : "1", "UnalignedPipeline" : "0", "ProcessNetwork" : "0", "Combinational" : "0", "ControlExist" : "1",
-		"Port" : [
-		{"Name" : "delay_wp_V_read", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "delay_rp_V_read", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "delay_buffer_V", "Type" : "Memory", "Direction" : "IO", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "tmp_5", "Type" : "None", "Direction" : "I", "BlockSignal" : [], "SubConnect" : []}, 
-		{"Name" : "in_V", "Type" : "Vld", "Direction" : "I", "BlockSignal" : [
-			{"Name" : "in_V_blk_n", "Type" : "RtlPort"}], "SubConnect" : []}],
-		"WaitState" : [],
-		"SubBlockPort" : []}]}
+		"SubBlockPort" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_0_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_1_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_2_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_3_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_4_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_5_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_6_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_7_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_8_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_9_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_10_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_11_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_12_V_U", "Parent" : "0", "Child" : []},
+	{"Level" : "1", "Path" : "`AUTOTB_DUT_INST.buffer_13_V_U", "Parent" : "0", "Child" : []}]}
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "601", "Max" : "601"}
-	, {"Name" : "Interval", "Min" : "602", "Max" : "602"}
+	{"Name" : "Latency", "Min" : "1246722", "Max" : "1246722"}
+	, {"Name" : "Interval", "Min" : "1246723", "Max" : "1246723"}
 ]}
 
 set Spec2ImplPortList { 
-	in_V { ap_none {  { in_V in_data 0 8 } } }
-	out_data_V { ap_vld {  { out_data_V out_data 1 24 }  { out_data_V_ap_vld out_vld 1 1 } } }
+	in_V_V { axis {  { in_V_V_TDATA in_data 0 24 }  { in_V_V_TVALID in_vld 0 1 }  { in_V_V_TREADY in_acc 1 1 } } }
+	out_V_data_V { axis {  { out_V_data_V_TDATA in_data 0 256 }  { out_V_data_V_TVALID in_vld 0 1 }  { out_V_data_V_TREADY in_acc 1 1 } } }
 }
 
 set busDeadlockParameterList { 

@@ -82,4 +82,5 @@ obj/dog_test.o: ../../../src/dog_test.cpp \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/hls_video_harris.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/hls_video_haar.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/hls_video_stereobm.h \
- ../../../src/dog.h /opt/Xilinx/Vivado_HLS/2016.2/include/hls_video.h
+ ../../../src/dog.h /opt/Xilinx/Vivado_HLS/2016.2/include/hls_video.h \
+ /opt/Xilinx/Vivado_HLS/2016.2/include/hls_stream.h

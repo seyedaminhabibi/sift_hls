@@ -7,34 +7,27 @@
 using namespace cv;
 using namespace std;
 
-
-int delay_test(){
-	ap_uint<8> delay_out;
-	delay dl;
-	int i=0, j =0;
+int dog_test(){
+	line_out line_o;
+	int i=0, j=0;
+	hls::stream<dog_in>  data_in;
+	hls::stream<line_out>  data_out;
 	for(i=0;i<IMAGE_HEIGHT; i++)
 		for(j=0; j<IMAGE_WIDTH; j++){
-			dl.func(i*IMAGE_WIDTH + j + 1, &delay_out);
-			cout << " delay out : " << delay_out << endl;
+			data_in << i*IMAGE_WIDTH + j + 1;
 		}
-	return 0;
-}
-int line_test(){
-	struct line_out lout;
-	line_buffer line;
-	int i=0, j =0, k=0;
-	for(i=0;i<IMAGE_HEIGHT; i++)
-		for(j=0; j<IMAGE_WIDTH; j++){
-			line.func(i*IMAGE_WIDTH + j + 1, lout);
-			cout << " line out : ";
-			for(k=0;k<KERNEL_SIZE;k++){
-				cout << lout.data[k] << " ";
-			}
-			cout << endl;
-		}
+	cout << "starting test ..." << endl;
+	dog(data_in, data_out);
+//	while(!data_out.empty()){
+//		data_out >> line_o;
+//		cout << line_o.data[0] << " " << line_o.data[1] << " " << line_o.data[2] << endl;
+//	}
+	cout << "dog test done!!!" << endl;
 	return 0;
 
+
 }
+
 int main(){
 //// int row, col;
 //    IMAGE_STREAM inputStream;
@@ -88,4 +81,12 @@ int main(){
 //			inputStream << tmp;
 //		}
 //	dog(inputStream, outputStream);
+
+//	Mat coeff = getGaussianKernel(KERNEL_SIZE,1.6,CV_32F);
+//	cout << "coeff : " << endl << coeff << endl;
+
+
+
+	dog_test();
+	return 0;
 }

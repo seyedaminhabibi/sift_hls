@@ -1,13 +1,13 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 15
-set MemName dog_line_delays_buffer_V
+set ID 1
+set MemName dog_buffer_0_V
 set CoreName ap_simcore_mem
-set PortList { 1 0 }
-set DataWd 8
-set AddrRange 3072
-set AddrWd 12
+set PortList { 2 3 }
+set DataWd 17
+set AddrRange 1024
+set AddrWd 10
 set impl_style block
 set TrueReset 0
 set HasInitializer 0
@@ -16,7 +16,7 @@ set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
 set DelayBudget 2.71
-set ClkPeriod 8
+set ClkPeriod 5
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -52,7 +52,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-set CoreName RAM_2P_BRAM
+set CoreName RAM
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
 if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
     eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
@@ -83,13 +83,13 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 16
-set MemName dog_line_delay_outs_V
+set ID 2
+set MemName dog_buffer_13_V
 set CoreName ap_simcore_mem
-set PortList { 2 2 }
-set DataWd 8
-set AddrRange 3
-set AddrWd 2
+set PortList { 0 3 }
+set DataWd 17
+set AddrRange 1024
+set AddrWd 10
 set impl_style block
 set TrueReset 0
 set HasInitializer 0
@@ -97,8 +97,8 @@ set IsROM 0
 set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 2.39
-set ClkPeriod 8
+set DelayBudget 2.71
+set ClkPeriod 5
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
@@ -171,35 +171,43 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# Direct connection:
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 17 \
-    name in_V \
-    type other \
-    dir I \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 3 \
+    name in_V_V \
+    reset_level 0 \
     sync_rst true \
-    corename dc_in_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { in_V { I 8 vector } } \
+    ports { in_V_V_TDATA { I 24 vector } in_V_V_TVALID { I 1 bit } in_V_V_TREADY { O 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'in_V_V'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 18 \
-    name out_data_V \
-    type other \
-    dir O \
-    reset_level 1 \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
+    id 4 \
+    name out_V_data_V \
+    reset_level 0 \
     sync_rst true \
-    corename dc_out_data_V \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { out_data_V { O 24 vector } out_data_V_ap_vld { O 1 bit } } \
+    ports { out_V_data_V_TDATA { I 256 vector } out_V_data_V_TVALID { I 1 bit } out_V_data_V_TREADY { O 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_V_data_V'"
 }
+}
+
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
@@ -207,7 +215,7 @@ eval "cg_default_interface_gen_dc { \
     id -1 \
     name ap_ctrl \
     type ap_ctrl \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
     corename ap_ctrl \
     op interface \
@@ -224,7 +232,7 @@ if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_cloc
 eval "cg_default_interface_gen_clock { \
     id -2 \
     name ${PortName} \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
     corename apif_ap_clk \
     data_wd ${DataWd} \
@@ -237,16 +245,16 @@ puts "@W \[IMPL-113\] Cannot find bus interface model in the library. Ignored ge
 
 
 # Adapter definition:
-set PortName ap_rst
+set PortName ap_rst_n
 set DataWd 1 
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
     id -3 \
     name ${PortName} \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
-    corename apif_ap_rst \
+    corename apif_ap_rst_n \
     data_wd ${DataWd} \
     op interface \
 }"

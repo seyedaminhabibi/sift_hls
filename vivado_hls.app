@@ -6,9 +6,10 @@
     </Simulation>
     <files xmlns="">
         <file name="../src/dog_test.cpp" sc="0" tb="1" cflags=" "/>
-        <file name="sift_starter/src/fxp_sqrt.h" sc="0" tb="false" cflags=""/>
-        <file name="sift_starter/src/dog.h" sc="0" tb="false" cflags=""/>
+        <file name="sift_starter/src/coeff.h" sc="0" tb="false" cflags=""/>
         <file name="sift_starter/src/dog.cpp" sc="0" tb="false" cflags=""/>
+        <file name="sift_starter/src/dog.h" sc="0" tb="false" cflags=""/>
+        <file name="sift_starter/src/fxp_sqrt.h" sc="0" tb="false" cflags=""/>
     </files>
     <solutions xmlns="">
         <solution name="solution1" status="active"/>

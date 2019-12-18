@@ -53,6 +53,7 @@ obj/dog.o: ../../../src/dog.cpp ../../../src/dog.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/hls_video_harris.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/hls_video_haar.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/hls_video_stereobm.h \
+ /opt/Xilinx/Vivado_HLS/2016.2/include/hls_stream.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls_dsp.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/utils/hls_dsp_common_utils.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/utils/hls_cordic_functions.h \
@@ -61,7 +62,6 @@ obj/dog.o: ../../../src/dog.cpp ../../../src/dog.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/hls_atan2_cordic.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/utils/hls_cordic.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/hls_awgn.h \
- /opt/Xilinx/Vivado_HLS/2016.2/include/hls_stream.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/hls_convolution_encoder.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/utils/hls_dsp_common_utils.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/hls_cmpy.h \
@@ -70,4 +70,4 @@ obj/dog.o: ../../../src/dog.cpp ../../../src/dog.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/hls_qam_mod.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/hls_sqrt_cordic.h \
  /opt/Xilinx/Vivado_HLS/2016.2/include/hls/dsp/hls_viterbi_decoder.h \
- ../../../src/fxp_sqrt.h
+ ../../../src/coeff.h
