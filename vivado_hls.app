@@ -1,18 +1,18 @@
-<project xmlns="com.autoesl.autopilot.project" name="sift_starter" top="dog">
-    <includePaths/>
-    <libraryPaths/>
-    <Simulation>
-        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
-    </Simulation>
-    <files xmlns="">
-        <file name="../src/dog_test.cpp" sc="0" tb="1" cflags=" "/>
-        <file name="sift_starter/src/coeff.h" sc="0" tb="false" cflags=""/>
-        <file name="sift_starter/src/dog.cpp" sc="0" tb="false" cflags=""/>
-        <file name="sift_starter/src/dog.h" sc="0" tb="false" cflags=""/>
-        <file name="sift_starter/src/fxp_sqrt.h" sc="0" tb="false" cflags=""/>
-    </files>
-    <solutions xmlns="">
-        <solution name="solution1" status="active"/>
-    </solutions>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="com.autoesl.autopilot.project" name="sift_starter" top="kp_detection">
+  <files>
+    <file name="../src/dog_test.cpp" sc="0" tb="1" cflags=" "/>
+    <file name="sift_starter/src/fxp_sqrt.h" sc="0" tb="false" cflags=""/>
+    <file name="sift_starter/src/dog.h" sc="0" tb="false" cflags=""/>
+    <file name="sift_starter/src/dog.cpp" sc="0" tb="false" cflags=""/>
+    <file name="sift_starter/src/coeff.h" sc="0" tb="false" cflags=""/>
+  </files>
+  <solutions>
+    <solution name="solution1" status="active"/>
+  </solutions>
+  <includePaths/>
+  <libraryPaths/>
+  <Simulation>
+    <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
+  </Simulation>
 </project>
-

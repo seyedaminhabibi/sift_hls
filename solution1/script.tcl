@@ -4,7 +4,7 @@
 ## Copyright (C) 1986-2016 Xilinx, Inc. All Rights Reserved.
 ############################################################
 open_project sift_starter
-set_top dog
+set_top kp_detection
 add_files sift_starter/src/fxp_sqrt.h
 add_files sift_starter/src/dog.h
 add_files sift_starter/src/dog.cpp

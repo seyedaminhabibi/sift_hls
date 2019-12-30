@@ -1,6 +1,6 @@
 <solution AutoPilot="com.autoesl.autopilot.solution">
     <config>
-        <schedule model="dog"/>
+        <schedule model="kp_detection"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">

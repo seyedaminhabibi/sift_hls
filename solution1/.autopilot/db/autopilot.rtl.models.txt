@@ -1,3 +1,2 @@
-dog_buffer_0_V
-dog_buffer_13_V
-dog
+kp_detection_buffer_V_1
+kp_detection

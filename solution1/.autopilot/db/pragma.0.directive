@@ -184,6 +184,62 @@
 <option name="dim" value="0"/>
 </pragma>
 </directive>
+<directive functionLabel="" functionName="my_mac2" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac2" label="">
+<pragma name="PIPELINE">
+<option name="II" value="10"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac2" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="in"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac2" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="coeffs"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac2" label="">
+<pragma name="ALLOCATION">
+<option name="instances" positionalBoolean="4" value="mul"/>
+<option name="limit" value="1"/>
+<option name="operation" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac" label="">
+<pragma name="PIPELINE">
+<option name="II" value="10"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="in"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="coeffs"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="my_mac" label="">
+<pragma name="ALLOCATION">
+<option name="instances" positionalBoolean="4" value="mul"/>
+<option name="limit" value="1"/>
+<option name="operation" positionalBoolean="type" value=""/>
+</pragma>
+</directive>
 <directive functionLabel="" functionName="dog" label="">
 <pragma name="INTERFACE">
 <option name="axis" positionalBoolean="mode" value=""/>
@@ -220,6 +276,23 @@
 <pragma name="DEPENDENCE">
 <option name="variable" value="buffer"/>
 <option name="inter" positionalBoolean="type" value=""/>
+<option name="false" positionalBoolean="dependent" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="kp_detection" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="out"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="kp_detection" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="kp_detection" label="">
+<pragma name="DEPENDENCE">
+<option name="variable" value="buffer"/>
+<option name="intra" positionalBoolean="type" value=""/>
 <option name="false" positionalBoolean="dependent" value=""/>
 </pragma>
 </directive>

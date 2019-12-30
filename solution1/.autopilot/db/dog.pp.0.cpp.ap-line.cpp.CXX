@@ -859,74 +859,147 @@
 #pragma line 100 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/hls_video_stereobm.h" ::: 64899
 #pragma line 70 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_video.h" 2 ::: 65409
 #pragma line 4 "sift_starter/src/dog.h" 2 ::: 65414
-#pragma line 2 "sift_starter/src/dog.cpp" 2 ::: 65454
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 1 ::: 65456
-#pragma line 43 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" ::: 65491
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_dsp_common_utils.h" 1 ::: 65492
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 1 3 ::: 65528
-#pragma line 41 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 65570
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 1 3 ::: 65575
-#pragma line 41 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 65617
-#pragma line 50 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 65618
-#pragma line 76 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 65620
-#pragma line 480 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 66012
-#pragma line 730 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 66015
-#pragma line 46 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 2 3 ::: 66129
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/sstream" 1 3 ::: 66130
-#pragma line 37 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/sstream" 3 ::: 66168
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/sstream.tcc" 1 3 ::: 66712
-#pragma line 39 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/sstream.tcc" 3 ::: 66752
-#pragma line 580 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/sstream" 2 3 ::: 67002
-#pragma line 47 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 2 3 ::: 67003
-#pragma line 149 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 67096
-#pragma line 542 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 67479
-#pragma line 1072 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 68000
-#pragma line 1224 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 68143
-#pragma line 1377 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 68287
-#pragma line 35 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_dsp_common_utils.h" 2 ::: 68470
-#pragma line 44 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 68645
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic_functions.h" 1 ::: 68646
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_fixed.h" 1 ::: 68683
-#pragma line 37 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic_functions.h" 2 ::: 68688
-#pragma line 45 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 69939
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic.h" 1 ::: 69940
-#pragma line 52 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic.h" ::: 69978
-#pragma line 143 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic.h" ::: 70011
-#pragma line 46 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 70558
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_atan2_cordic.h" 1 ::: 70559
-#pragma line 47 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 70648
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_awgn.h" 1 ::: 70649
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_fixed.h" 1 ::: 70685
-#pragma line 36 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_awgn.h" 2 ::: 70690
-#pragma line 299 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_awgn.h" ::: 70944
-#pragma line 48 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 71035
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_convolution_encoder.h" 1 ::: 71036
-#pragma line 39 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_convolution_encoder.h" ::: 71067
-#pragma line 214 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_convolution_encoder.h" ::: 71184
-#pragma line 49 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 71336
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_cmpy.h" 1 ::: 71337
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_fixed.h" 1 ::: 71373
-#pragma line 36 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_cmpy.h" 2 ::: 71378
-#pragma line 50 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 71494
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_nco.h" 1 ::: 71495
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_fixed.h" 1 ::: 71531
-#pragma line 36 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_nco.h" 2 ::: 71536
-#pragma line 50 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_nco.h" ::: 71543
-#pragma line 218 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_nco.h" ::: 71682
-#pragma line 51 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 72195
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_demod.h" 1 ::: 72196
-#pragma line 40 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_demod.h" ::: 72227
-#pragma line 121 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_demod.h" ::: 72291
-#pragma line 52 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 72301
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_mod.h" 1 ::: 72302
-#pragma line 40 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_mod.h" ::: 72333
-#pragma line 53 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 72408
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_sqrt_cordic.h" 1 ::: 72409
-#pragma line 54 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 72498
-#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_viterbi_decoder.h" 1 ::: 72499
-#pragma line 39 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_viterbi_decoder.h" ::: 72530
-#pragma line 300 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_viterbi_decoder.h" ::: 72704
-#pragma line 55 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 73160
-#pragma line 4 "sift_starter/src/dog.cpp" 2 ::: 73165
-#pragma line 1 "sift_starter/src/coeff.h" 1 ::: 73166
-#pragma line 5 "sift_starter/src/dog.cpp" 2 ::: 73170
+#pragma line 33 "sift_starter/src/dog.h" ::: 65435
+#pragma line 2 "sift_starter/src/dog.cpp" 2 ::: 65477
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 1 ::: 65479
+#pragma line 43 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" ::: 65514
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_dsp_common_utils.h" 1 ::: 65515
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 1 3 ::: 65551
+#pragma line 41 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 65593
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 1 3 ::: 65598
+#pragma line 41 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 65640
+#pragma line 50 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 65641
+#pragma line 76 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 65643
+#pragma line 480 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 66035
+#pragma line 730 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 3 ::: 66038
+#pragma line 46 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 2 3 ::: 66152
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/sstream" 1 3 ::: 66153
+#pragma line 37 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/sstream" 3 ::: 66191
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/sstream.tcc" 1 3 ::: 66735
+#pragma line 39 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/sstream.tcc" 3 ::: 66775
+#pragma line 580 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/sstream" 2 3 ::: 67025
+#pragma line 47 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 2 3 ::: 67026
+#pragma line 149 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 67119
+#pragma line 542 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 67502
+#pragma line 1072 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 68023
+#pragma line 1224 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 68166
+#pragma line 1377 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/complex" 3 ::: 68310
+#pragma line 35 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_dsp_common_utils.h" 2 ::: 68493
+#pragma line 44 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 68668
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic_functions.h" 1 ::: 68669
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_fixed.h" 1 ::: 68706
+#pragma line 37 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic_functions.h" 2 ::: 68711
+#pragma line 45 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 69962
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic.h" 1 ::: 69963
+#pragma line 52 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic.h" ::: 70001
+#pragma line 143 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/utils/hls_cordic.h" ::: 70034
+#pragma line 46 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 70581
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_atan2_cordic.h" 1 ::: 70582
+#pragma line 47 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 70671
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_awgn.h" 1 ::: 70672
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_fixed.h" 1 ::: 70708
+#pragma line 36 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_awgn.h" 2 ::: 70713
+#pragma line 299 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_awgn.h" ::: 70967
+#pragma line 48 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 71058
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_convolution_encoder.h" 1 ::: 71059
+#pragma line 39 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_convolution_encoder.h" ::: 71090
+#pragma line 214 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_convolution_encoder.h" ::: 71207
+#pragma line 49 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 71359
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_cmpy.h" 1 ::: 71360
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_fixed.h" 1 ::: 71396
+#pragma line 36 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_cmpy.h" 2 ::: 71401
+#pragma line 50 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 71517
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_nco.h" 1 ::: 71518
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/ap_fixed.h" 1 ::: 71554
+#pragma line 36 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_nco.h" 2 ::: 71559
+#pragma line 50 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_nco.h" ::: 71566
+#pragma line 218 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_nco.h" ::: 71705
+#pragma line 51 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 72218
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_demod.h" 1 ::: 72219
+#pragma line 40 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_demod.h" ::: 72250
+#pragma line 121 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_demod.h" ::: 72314
+#pragma line 52 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 72324
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_mod.h" 1 ::: 72325
+#pragma line 40 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_qam_mod.h" ::: 72356
+#pragma line 53 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 72431
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_sqrt_cordic.h" 1 ::: 72432
+#pragma line 54 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 72521
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_viterbi_decoder.h" 1 ::: 72522
+#pragma line 39 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_viterbi_decoder.h" ::: 72553
+#pragma line 300 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls/dsp/hls_viterbi_decoder.h" ::: 72727
+#pragma line 55 "/opt/Xilinx/Vivado_HLS/2016.2/common/technology/autopilot/hls_dsp.h" 2 ::: 73183
+#pragma line 4 "sift_starter/src/dog.cpp" 2 ::: 73188
+#pragma line 1 "sift_starter/src/coeff.h" 1 ::: 73189
+#pragma line 5 "sift_starter/src/dog.cpp" 2 ::: 73193
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 1 3 ::: 73194
+#pragma line 38 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 3 ::: 73233
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/codecvt.h" 1 3 ::: 73237
+#pragma line 40 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/codecvt.h" 3 ::: 73278
+#pragma line 42 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 2 3 ::: 73743
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 1 3 ::: 73744
+#pragma line 41 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 3 ::: 73786
+#pragma line 1 "/usr/include/stdio.h" 1 3 4 ::: 73789
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4 ::: 73823
+#pragma line 56 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4 ::: 73848
+#pragma line 34 "/usr/include/stdio.h" 2 3 4 ::: 73851
+#pragma line 74 "/usr/include/stdio.h" 3 4 ::: 73852
+#pragma line 1 "/usr/include/libio.h" 1 3 4 ::: 73853
+#pragma line 1 "/usr/include/_G_config.h" 1 3 4 ::: 73885
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 1 3 4 ::: 73901
+#pragma line 56 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/clang/bin/../lib/clang/3.1/include/stddef.h" 3 4 ::: 73926
+#pragma line 16 "/usr/include/_G_config.h" 2 3 4 ::: 73929
+#pragma line 1 "/usr/include/wchar.h" 1 3 4 ::: 73934
+#pragma line 900 "/usr/include/wchar.h" 3 4 ::: 73956
+#pragma line 21 "/usr/include/_G_config.h" 2 3 4 ::: 73959
+#pragma line 45 "/usr/include/_G_config.h" 3 4 ::: 73970
+#pragma line 32 "/usr/include/libio.h" 2 3 4 ::: 73980
+#pragma line 47 "/usr/include/libio.h" 3 4 ::: 73982
+#pragma line 86 "/usr/include/libio.h" 3 4 ::: 73984
+#pragma line 124 "/usr/include/libio.h" 3 4 ::: 73990
+#pragma line 144 "/usr/include/libio.h" 3 4 ::: 73992
+#pragma line 173 "/usr/include/libio.h" 3 4 ::: 74012
+#pragma line 241 "/usr/include/libio.h" 3 4 ::: 74023
+#pragma line 289 "/usr/include/libio.h" 3 4 ::: 74064
+#pragma line 329 "/usr/include/libio.h" 3 4 ::: 74094
+#pragma line 429 "/usr/include/libio.h" 3 4 ::: 74154
+#pragma line 459 "/usr/include/libio.h" 3 4 ::: 74169
+#pragma line 521 "/usr/include/libio.h" 3 4 ::: 74181
+#pragma line 75 "/usr/include/stdio.h" 2 3 4 ::: 74183
+#pragma line 107 "/usr/include/stdio.h" 3 4 ::: 74189
+#pragma line 150 "/usr/include/stdio.h" 3 4 ::: 74223
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4 ::: 74239
+#pragma line 165 "/usr/include/stdio.h" 2 3 4 ::: 74256
+#pragma line 205 "/usr/include/stdio.h" 3 4 ::: 74288
+#pragma line 297 "/usr/include/stdio.h" 3 4 ::: 74365
+#pragma line 467 "/usr/include/stdio.h" 3 4 ::: 74504
+#pragma line 527 "/usr/include/stdio.h" 3 4 ::: 74524
+#pragma line 794 "/usr/include/stdio.h" 3 4 ::: 74777
+#pragma line 818 "/usr/include/stdio.h" 3 4 ::: 74788
+#pragma line 1 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 1 3 4 ::: 74825
+#pragma line 854 "/usr/include/stdio.h" 2 3 4 ::: 74857
+#pragma line 930 "/usr/include/stdio.h" 3 4 ::: 74924
+#pragma line 942 "/usr/include/stdio.h" 3 4 ::: 74927
+#pragma line 44 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 2 3 ::: 74929
+#pragma line 91 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 3 ::: 74935
+#pragma line 147 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 3 ::: 74983
+#pragma line 165 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 3 ::: 74986
+#pragma line 43 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 2 3 ::: 75003
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/basic_file.h" 1 3 ::: 75004
+#pragma line 38 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/basic_file.h" 3 ::: 75043
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/c++io.h" 1 3 ::: 75046
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 1 3 ::: 75083
+#pragma line 41 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cstdio" 3 ::: 75125
+#pragma line 37 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/c++io.h" 2 3 ::: 75126
+#pragma line 41 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/x86_64-unknown-linux-gnu/bits/basic_file.h" 2 3 ::: 75140
+#pragma line 44 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 2 3 ::: 75209
+#pragma line 280 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 3 ::: 75433
+#pragma line 484 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 3 ::: 75619
+#pragma line 561 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 3 ::: 75675
+#pragma line 655 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 3 ::: 75750
+#pragma line 734 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 3 ::: 75807
+#pragma line 824 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 3 ::: 75881
+#pragma line 903 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 3 ::: 75938
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc" 1 3 ::: 75957
+#pragma line 39 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/bits/fstream.tcc" 3 ::: 75997
+#pragma line 921 "/opt/Xilinx/Vivado_HLS/2016.2/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/fstream" 2 3 ::: 76941
+#pragma line 6 "sift_starter/src/dog.cpp" 2 ::: 76942

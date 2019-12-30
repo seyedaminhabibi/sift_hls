@@ -1,5 +1,5 @@
 
-set TopModule "dog"
+set TopModule "kp_detection"
 set ClockPeriod "5.000000"
 set ClockList {ap_clk}
 set multiClockList {}
@@ -15,7 +15,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 0
-set ResetLevelFlag 0
+set ResetLevelFlag 1
 set ResetStyle "control"
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
